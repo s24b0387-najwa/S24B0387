@@ -3,16 +3,6 @@ import pandas as pd
 import plotly.express as px
 
 # ==========================================
-# PAGE CONFIGURATION
-# ==========================================
-
-st.set_page_config(
-    page_title="Live Birth Trends in Malaysia",
-    page_icon="📊",
-    layout="wide"
-)
-
-# ==========================================
 # LIGHT THEME
 # ==========================================
 
@@ -44,12 +34,19 @@ st.markdown("""
 # LOAD DATASET
 # ==========================================
 
-BIRTH_URL = "https://storage.dosm.gov.my/demography/birth.parquet"
+BIRTH_URL = "https://dosm.gov.my"
 
 @st.cache_data
 def load_data():
     df = pd.read_parquet(BIRTH_URL)
     df["date"] = pd.to_datetime(df["date"])
+    
+    # Elakkan pengiraan berganda jika dataset mempunyai lajur pecahan
+    if "sex" in df.columns:
+        df = df[df["sex"] == "both"]
+    if "state" in df.columns:
+        df = df[df["state"] == "Malaysia"]
+        
     return df
 
 try:
@@ -119,7 +116,6 @@ df_annual = (
 )
 
 df_annual.columns = ["Year", "Total Births"]
-
 df_annual = df_annual.sort_values("Year")
 
 if df_annual.empty:
@@ -206,4 +202,3 @@ st.divider()
 
 st.caption("Source: Department of Statistics Malaysia (DOSM)")
 st.caption("Malaysia Live Birth Analysis | Objective 1")
-

@@ -7,11 +7,10 @@ import plotly.express as px
 # ==========================================
 
 st.set_page_config(
-    page_title="Malaysia Live Birth Analysis",
+    page_title="Live Birth Trends in Malaysia",
     page_icon="📊",
     layout="wide"
 )
-
 
 # ==========================================
 # LIGHT THEME
@@ -43,79 +42,66 @@ st.markdown("""
 
 
 # ==========================================
-# DATASET URL
+# LOAD DATASET
 # ==========================================
 
 BIRTH_URL = (
     "https://storage.dosm.gov.my/demography/birth.parquet"
 )
 
-
-# ==========================================
-# LOAD DATA
-# ==========================================
-
 @st.cache_data
 def load_data():
 
-    df_birth = pd.read_parquet(BIRTH_URL)
+    df = pd.read_parquet(BIRTH_URL)
 
-    df_birth["date"] = pd.to_datetime(
-        df_birth["date"]
-    )
+    df["date"] = pd.to_datetime(df["date"])
 
-    return df_birth
+    return df
 
 
 try:
-
     df_birth = load_data()
 
 except Exception as e:
-
     st.error(f"Unable to load dataset: {e}")
     st.stop()
 
 
 # ==========================================
-# DASHBOARD HEADER
+# DASHBOARD TITLE
 # ==========================================
 
 st.title("Malaysia Live Birth Analysis")
 
 st.markdown(
     '<p class="subtitle">'
-    'An analysis of live birth trends in Malaysia '
-    'from 2000 to 2025.'
+    'Exploring live birth trends in Malaysia from 2000 to 2025.'
     '</p>',
     unsafe_allow_html=True
 )
 
-st.markdown("---")
+st.divider()
 
 
 # ==========================================
-# RESEARCH OBJECTIVE
+# RESEARCH OBJECTIVE 1
 # ==========================================
 
 st.subheader("Research Objective 1")
 
 st.info(
-    "Examine the trends in live births in Malaysia "
-    "over the years based on state, gender, and ethnic group."
+    "Examine the trends in live births in Malaysia over the "
+    "years based on state, gender, and ethnic group."
 )
-
 
 st.write("")
 
 
 # ==========================================
-# SIDEBAR FILTER
+# YEAR FILTER
 # ==========================================
 
 st.sidebar.title("Dashboard Filters")
-
-st.sidebar.markdown("### Year Range")
 
 year_range = st.sidebar.slider(
     "Select Year Range",
@@ -141,7 +127,7 @@ df_filtered = df_filtered.sort_values("date")
 
 
 # ==========================================
-# KEY METRICS
+# SUMMARY METRICS
 # ==========================================
 
 total_births = df_filtered["abs"].sum()
@@ -182,131 +168,44 @@ st.divider()
 # TOTAL ANNUAL LIVE BIRTHS
 # ==========================================
 
-st.subheader("1. Total Annual Live Births")
+st.subheader("Total Annual Live Births in Malaysia")
 
-st.markdown(
-    "This visualization shows the changes in the total "
-    "number of live births in Malaysia over the selected years."
+st.write(
+    "This line chart illustrates the changes in the total "
+    "number of live births in Malaysia over the selected years. "
+    "It helps identify the overall trend and fluctuations "
+    "in annual live births."
 )
 
-fig1 = px.line(
+fig = px.line(
     df_filtered,
     x="date",
     y="abs",
     markers=True,
-    title="Total Annual Live Births in Malaysia",
+    title="Total Annual Live Births in Malaysia (2000–2025)",
     labels={
         "date": "Year",
         "abs": "Total Live Births"
     }
 )
 
-fig1.update_layout(
+fig.update_traces(
+    line=dict(width=3),
+    marker=dict(size=7)
+)
+
+fig.update_layout(
     template="plotly_white",
-    hovermode="x unified"
+    hovermode="x unified",
+    xaxis_title="Year",
+    yaxis_title="Total Live Births",
+    title_x=0.5
 )
 
 st.plotly_chart(
-    fig1,
+    fig,
     use_container_width=True
 )
-
-
-# ==========================================
-# VISUALIZATION 2
-# CRUDE BIRTH RATE
-# ==========================================
-
-st.subheader("2. Crude Birth Rate")
-
-st.markdown(
-    "This visualization presents the crude birth rate "
-    "per 1,000 population and shows how the birth rate "
-    "changes over time."
-)
-
-fig2 = px.line(
-    df_filtered,
-    x="date",
-    y="rate",
-    markers=True,
-    title="Crude Birth Rate per 1,000 Population",
-    labels={
-        "date": "Year",
-        "rate": "Crude Birth Rate (per 1,000)"
-    }
-)
-
-fig2.update_layout(
-    template="plotly_white",
-    hovermode="x unified"
-)
-
-st.plotly_chart(
-    fig2,
-    use_container_width=True
-)
-
-
-# ==========================================
-# VISUALIZATION 3
-# ANNUAL NET CHANGE IN LIVE BIRTHS
-# ==========================================
-
-st.subheader("3. Annual Net Change in Live Births")
-
-st.markdown(
-    "This visualization compares the yearly increase or "
-    "decrease in the number of live births in Malaysia."
-)
-
-df_yoy = df_filtered.copy()
-
-df_yoy["yoy_change"] = df_yoy["abs"].diff()
-
-df_yoy = df_yoy.dropna(
-    subset=["yoy_change"]
-)
-
-fig3 = px.bar(
-    df_yoy,
-    x="date",
-    y="yoy_change",
-    title="Annual Net Change in Live Births",
-    labels={
-        "date": "Year",
-        "yoy_change": "Net Change in Births"
-    },
-    color="yoy_change",
-    color_continuous_scale="RdBu"
-)
-
-fig3.add_hline(
-    y=0,
-    line_dash="dash"
-)
-
-fig3.update_layout(
-    template="plotly_white",
-    hovermode="x unified"
-)
-
-st.plotly_chart(
-    fig3,
-    use_container_width=True
-)
-
-
-# ==========================================
-# VIEW DATASET
-# ==========================================
-
-with st.expander("View Dataset"):
-
-    st.dataframe(
-        df_filtered,
-        use_container_width=True
-    )
 
 
 # ==========================================
@@ -316,9 +215,9 @@ with st.expander("View Dataset"):
 st.divider()
 
 st.caption(
-    "Data Source: Department of Statistics Malaysia (DOSM)"
+    "Source: Department of Statistics Malaysia (DOSM)"
 )
 
 st.caption(
-    "Malaysia Live Birth Analysis | 2000–2025"
+    "Malaysia Live Birth Analysis | Objective 1"
 )

@@ -3,137 +3,213 @@ import pandas as pd
 import plotly.express as px
 
 # ==========================================
-# PAGE CONFIGURATION (HANYA SEKALI DI SINI)
+# PAGE CONFIGURATION (HANYA DI MAIN.PY)
 # ==========================================
 
 st.set_page_config(
-    page_title="Scientific Visualization",
+    page_title="Live Birth Trends in Malaysia",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
 # ==========================================
-# HEADER & PLO METRICS (DARI MAIN ASAL ANDA)
+# LIGHT THEME
 # ==========================================
 
-st.header("Scientific Visualization", divider="gray")
+st.markdown("""
+<style>
+    .stApp {
+        background-color: #F8FAFC;
+    }
 
-col1, col2, col3, col4 = st.columns(4)
+    h1, h2, h3 {
+        color: #1E293B;
+    }
 
-col1.metric(label="PLO 2", value="3.3", help="PLO 2: Cognitive Skill", border=True)
-col2.metric(label="PLO 3", value="3.5", help="PLO 3: Digital Skill", border=True)
-col3.metric(label="PLO 4", value="4.0", help="PLO 4: Interpersonal Skill", border=True)
-col4.metric(label="PLO 5", value="4.3", help="PLO 5: Communication Skill", border=True)
+    .subtitle {
+        color: #64748B;
+        font-size: 16px;
+    }
 
-st.divider()
-
-# ==========================================
-# VISUALISATION 1: ARTS FACULTY GENDER ANALYSIS
-# ==========================================
-
-st.header("Arts Faculty Gender Distribution Analysis 🎨", divider="gray")
-
-url = "https://raw.githubusercontent.com/fakhitah3/SV2025/refs/heads/main/arts_faculty_data.csv"
-
-try:
-    arts_df = pd.read_csv(url)
-    st.success("Data loaded successfully!")
-
-    st.subheader("Raw Data Preview")
-    st.dataframe(arts_df.head(), use_container_width=True)
-
-    gender_counts = arts_df['Gender'].value_counts().reset_index()
-    gender_counts.columns = ['Gender', 'Count']
-
-    st.subheader("Gender Distribution in Arts Faculty")
-
-    fig_arts = px.pie(
-        gender_counts,
-        values='Count',
-        names='Gender',
-        title='Distribution of Gender in Arts Faculty',
-        color_discrete_sequence=px.colors.sequential.Agsunset,
-        hover_data=['Count'],
-        labels={'Count': 'Number of Students'}
-    )
-
-    fig_arts.update_traces(textposition='inside', textinfo='percent+label')
-    fig_arts.update_layout(showlegend=True)
-
-    st.plotly_chart(fig_arts, use_container_width=True)
-
-except Exception as e:
-    st.error(f"Error loading or processing Arts Faculty data: {e}")
-
-st.divider()
+    div[data-testid="stMetric"] {
+        background-color: white;
+        padding: 18px;
+        border-radius: 12px;
+        border: 1px solid #E2E8F0;
+    }
+</style>
+""", unsafe_allow_html=True)
 
 # ==========================================
-# VISUALISATION 1 (DOSM): MALAYSIA LIVE BIRTHS
+# LOAD DATASET
 # ==========================================
-
-st.header("Malaysia Live Birth Analysis (Objective 1)", divider="gray")
 
 BIRTH_URL = "https://dosm.gov.my"
 
 @st.cache_data
-def load_birth_data():
+def load_data():
     df = pd.read_parquet(BIRTH_URL)
     df["date"] = pd.to_datetime(df["date"])
+
+    # Elakkan pengiraan berganda jika dataset mempunyai lajur pecahan
     if "sex" in df.columns:
         df = df[df["sex"] == "both"]
     if "state" in df.columns:
         df = df[df["state"] == "Malaysia"]
+
     return df
 
 try:
-    df_birth = load_birth_data()
-
-    st.sidebar.title("Dashboard Filters")
-    min_year = int(df_birth["date"].dt.year.min())
-    max_year = int(df_birth["date"].dt.year.max())
-
-    year_range = st.sidebar.slider(
-        "Select Year Range",
-        min_value=min_year,
-        max_value=max_year,
-        value=(min_year, max_year),
-        step=1
-    )
-
-    df_filtered = df_birth[
-        (df_birth["date"].dt.year >= year_range[0]) &
-        (df_birth["date"].dt.year <= year_range[1])
-    ].copy()
-
-    df_annual = (
-        df_filtered.groupby(df_filtered["date"].dt.year)["abs"]
-        .sum()
-        .reset_index()
-    )
-    df_annual.columns = ["Year", "Total Births"]
-    df_annual = df_annual.sort_values("Year")
-
-    c1, c2, c3 = st.columns(3)
-    c1.metric("Total Live Births", f"{df_annual['Total Births'].sum():,.0f}")
-    c2.metric("Average Annual Births", f"{df_annual['Total Births'].mean():,.0f}")
-    c3.metric(
-        f"Live Births in {int(df_annual.iloc[-1]['Year'])}",
-        f"{df_annual.iloc[-1]['Total Births']:,.0f}"
-    )
-
-    fig_birth = px.line(
-        df_annual,
-        x="Year",
-        y="Total Births",
-        markers=True,
-        title="Total Annual Live Births in Malaysia",
-        labels={"Year": "Year", "Total Births": "Total Live Births"}
-    )
-    fig_birth.update_traces(line=dict(width=3), marker=dict(size=7))
-    fig_birth.update_layout(template="plotly_white", hovermode="x unified", title_x=0.5)
-
-    st.plotly_chart(fig_birth, use_container_width=True)
-
+    df_birth = load_data()
 except Exception as e:
-    st.error(f"Unable to load birth dataset: {e}")
+    st.error(f"Unable to load dataset: {e}")
+    st.stop()
+
+# ==========================================
+# DASHBOARD HEADER
+# ==========================================
+
+st.title("Malaysia Live Birth Analysis")
+
+st.markdown(
+    '<p class="subtitle">'
+    'Exploring live birth trends in Malaysia from 2000 to 2025.'
+    '</p>',
+    unsafe_allow_html=True
+)
+
+st.divider()
+
+# ==========================================
+# RESEARCH OBJECTIVE 1
+# ==========================================
+
+st.subheader("Research Objective 1")
+
+st.info(
+    "Examine the trends in live births in Malaysia over the years."
+)
+
+# ==========================================
+# YEAR FILTER (SIDEBAR)
+# ==========================================
+
+st.sidebar.title("Dashboard Filters")
+
+min_year = int(df_birth["date"].dt.year.min())
+max_year = int(df_birth["date"].dt.year.max())
+
+year_range = st.sidebar.slider(
+    "Select Year Range",
+    min_value=min_year,
+    max_value=max_year,
+    value=(min_year, max_year),
+    step=1
+)
+
+start_year, end_year = year_range
+
+# ==========================================
+# FILTER AND GROUP DATA
+# ==========================================
+
+df_filtered = df_birth[
+    (df_birth["date"].dt.year >= start_year) &
+    (df_birth["date"].dt.year <= end_year)
+].copy()
+
+df_annual = (
+    df_filtered
+    .groupby(df_filtered["date"].dt.year)["abs"]
+    .sum()
+    .reset_index()
+)
+
+df_annual.columns = ["Year", "Total Births"]
+df_annual = df_annual.sort_values("Year")
+
+if df_annual.empty:
+    st.warning("No data available.")
+    st.stop()
+
+# ==========================================
+# SUMMARY METRICS
+# ==========================================
+
+total_births = df_annual["Total Births"].sum()
+average_births = df_annual["Total Births"].mean()
+latest_births = df_annual.iloc[-1]["Total Births"]
+
+col1, col2, col3 = st.columns(3)
+
+col1.metric(
+    "Total Live Births",
+    f"{total_births:,.0f}"
+)
+
+col2.metric(
+    "Average Annual Births",
+    f"{average_births:,.0f}"
+)
+
+col3.metric(
+    f"Live Births in {int(df_annual.iloc[-1]['Year'])}",
+    f"{latest_births:,.0f}"
+)
+
+st.divider()
+
+# ==========================================
+# VISUALIZATION 1 - LINE CHART
+# ==========================================
+
+st.subheader("Total Annual Live Births in Malaysia")
+
+st.write(
+    "This line chart illustrates the changes in the total "
+    "number of live births in Malaysia over the selected years. "
+    "It helps identify the overall trend and fluctuations "
+    "in annual live births."
+)
+
+fig = px.line(
+    df_annual,
+    x="Year",
+    y="Total Births",
+    markers=True,
+    title="Total Annual Live Births in Malaysia",
+    labels={
+        "Year": "Year",
+        "Total Births": "Total Live Births"
+    }
+)
+
+fig.update_traces(
+    line=dict(width=3),
+    marker=dict(size=7)
+)
+
+fig.update_layout(
+    template="plotly_white",
+    hovermode="x unified",
+    title_x=0.5
+)
+
+st.plotly_chart(fig, use_container_width=True)
+
+# ==========================================
+# VIEW DATASET
+# ==========================================
+
+with st.expander("View Annual Birth Dataset"):
+    st.dataframe(df_annual, use_container_width=True)
+
+# ==========================================
+# FOOTER
+# ==========================================
+
+st.divider()
+
+st.caption("Source: Department of Statistics Malaysia (DOSM)")
+st.caption("Malaysia Live Birth Analysis | Objective 1")

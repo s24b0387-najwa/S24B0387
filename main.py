@@ -45,7 +45,7 @@ st.markdown("""
 # LOAD DATASET
 # ==========================================
 
-BIRTH_URL = "https://dosm.gov.my"
+BIRTH_URL = "https://storage.dosm.gov.my/demography/birth.parquet"
 
 @st.cache_data
 def load_data():
@@ -143,20 +143,9 @@ latest_births = df_annual.iloc[-1]["Total Births"]
 
 col1, col2, col3 = st.columns(3)
 
-col1.metric(
-    "Total Live Births",
-    f"{total_births:,.0f}"
-)
-
-col2.metric(
-    "Average Annual Births",
-    f"{average_births:,.0f}"
-)
-
-col3.metric(
-    f"Live Births in {int(df_annual.iloc[-1]['Year'])}",
-    f"{latest_births:,.0f}"
-)
+col1.metric("Total Live Births", f"{total_births:,.0f}")
+col2.metric("Average Annual Births", f"{average_births:,.0f}")
+col3.metric(f"Live Births in {int(df_annual.iloc[-1]['Year'])}", f"{latest_births:,.0f}")
 
 st.divider()
 
@@ -179,22 +168,11 @@ fig = px.line(
     y="Total Births",
     markers=True,
     title="Total Annual Live Births in Malaysia",
-    labels={
-        "Year": "Year",
-        "Total Births": "Total Live Births"
-    }
+    labels={"Year": "Year", "Total Births": "Total Live Births"}
 )
 
-fig.update_traces(
-    line=dict(width=3),
-    marker=dict(size=7)
-)
-
-fig.update_layout(
-    template="plotly_white",
-    hovermode="x unified",
-    title_x=0.5
-)
+fig.update_traces(line=dict(width=3), marker=dict(size=7))
+fig.update_layout(template="plotly_white", hovermode="x unified", title_x=0.5)
 
 st.plotly_chart(fig, use_container_width=True)
 
@@ -210,6 +188,5 @@ with st.expander("View Annual Birth Dataset"):
 # ==========================================
 
 st.divider()
-
 st.caption("Source: Department of Statistics Malaysia (DOSM)")
 st.caption("Malaysia Live Birth Analysis | Objective 1")

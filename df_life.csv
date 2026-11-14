@@ -1,0 +1,1791 @@
+state,date,sex,ethnicity,life_expectancy
+Johor,2022-01-01,both,overall,73.5
+Johor,2022-01-01,both,bumi,72.2
+Johor,2022-01-01,both,bumi_malay,72.2
+Johor,2022-01-01,both,bumi_other,72.4
+Johor,2022-01-01,both,chinese,75.6
+Johor,2022-01-01,both,indian,69.7
+Johor,2022-01-01,male,overall,71.4
+Johor,2022-01-01,male,bumi,70.0
+Johor,2022-01-01,male,bumi_malay,69.9
+Johor,2022-01-01,male,bumi_other,70.9
+Johor,2022-01-01,male,chinese,73.0
+Johor,2022-01-01,male,indian,66.3
+Johor,2022-01-01,female,overall,76.0
+Johor,2022-01-01,female,bumi,74.6
+Johor,2022-01-01,female,bumi_malay,74.7
+Johor,2022-01-01,female,bumi_other,73.4
+Johor,2022-01-01,female,chinese,78.8
+Johor,2022-01-01,female,indian,73.7
+Kedah,2022-01-01,both,overall,71.7
+Kedah,2022-01-01,both,bumi,71.3
+Kedah,2022-01-01,both,bumi_malay,71.3
+Kedah,2022-01-01,both,bumi_other,78.7
+Kedah,2022-01-01,both,chinese,74.4
+Kedah,2022-01-01,both,indian,68.7
+Kedah,2022-01-01,male,overall,69.0
+Kedah,2022-01-01,male,bumi,68.7
+Kedah,2022-01-01,male,bumi_malay,68.6
+Kedah,2022-01-01,male,bumi_other,77.5
+Kedah,2022-01-01,male,chinese,71.1
+Kedah,2022-01-01,male,indian,64.2
+Kedah,2022-01-01,female,overall,74.7
+Kedah,2022-01-01,female,bumi,74.2
+Kedah,2022-01-01,female,bumi_malay,74.1
+Kedah,2022-01-01,female,bumi_other,79.1
+Kedah,2022-01-01,female,chinese,78.3
+Kedah,2022-01-01,female,indian,73.4
+Kelantan,2022-01-01,both,overall,71.4
+Kelantan,2022-01-01,both,bumi,71.1
+Kelantan,2022-01-01,both,bumi_malay,71.2
+Kelantan,2022-01-01,both,bumi_other,66.4
+Kelantan,2022-01-01,both,chinese,74.6
+Kelantan,2022-01-01,both,indian,70.9
+Kelantan,2022-01-01,male,overall,68.9
+Kelantan,2022-01-01,male,bumi,68.6
+Kelantan,2022-01-01,male,bumi_malay,68.7
+Kelantan,2022-01-01,male,bumi_other,65.7
+Kelantan,2022-01-01,male,chinese,71.1
+Kelantan,2022-01-01,male,indian,66.6
+Kelantan,2022-01-01,female,overall,74.1
+Kelantan,2022-01-01,female,bumi,73.8
+Kelantan,2022-01-01,female,bumi_malay,73.9
+Kelantan,2022-01-01,female,bumi_other,67.2
+Kelantan,2022-01-01,female,chinese,79.1
+Kelantan,2022-01-01,female,indian,76.9
+Melaka,2022-01-01,both,overall,73.0
+Melaka,2022-01-01,both,bumi,71.9
+Melaka,2022-01-01,both,bumi_malay,71.8
+Melaka,2022-01-01,both,bumi_other,74.0
+Melaka,2022-01-01,both,chinese,76.1
+Melaka,2022-01-01,both,indian,69.2
+Melaka,2022-01-01,male,overall,70.5
+Melaka,2022-01-01,male,bumi,69.5
+Melaka,2022-01-01,male,bumi_malay,69.5
+Melaka,2022-01-01,male,bumi_other,70.5
+Melaka,2022-01-01,male,chinese,73.4
+Melaka,2022-01-01,male,indian,65.1
+Melaka,2022-01-01,female,overall,75.6
+Melaka,2022-01-01,female,bumi,74.2
+Melaka,2022-01-01,female,bumi_malay,74.2
+Melaka,2022-01-01,female,bumi_other,77.7
+Melaka,2022-01-01,female,chinese,79.2
+Melaka,2022-01-01,female,indian,73.5
+Negeri Sembilan,2022-01-01,both,overall,72.9
+Negeri Sembilan,2022-01-01,both,bumi,72.1
+Negeri Sembilan,2022-01-01,both,bumi_malay,72.2
+Negeri Sembilan,2022-01-01,both,bumi_other,69.8
+Negeri Sembilan,2022-01-01,both,chinese,76.3
+Negeri Sembilan,2022-01-01,both,indian,70.2
+Negeri Sembilan,2022-01-01,male,overall,70.3
+Negeri Sembilan,2022-01-01,male,bumi,69.6
+Negeri Sembilan,2022-01-01,male,bumi_malay,69.7
+Negeri Sembilan,2022-01-01,male,bumi_other,68.0
+Negeri Sembilan,2022-01-01,male,chinese,73.5
+Negeri Sembilan,2022-01-01,male,indian,66.6
+Negeri Sembilan,2022-01-01,female,overall,75.9
+Negeri Sembilan,2022-01-01,female,bumi,74.9
+Negeri Sembilan,2022-01-01,female,bumi_malay,74.9
+Negeri Sembilan,2022-01-01,female,bumi_other,71.8
+Negeri Sembilan,2022-01-01,female,chinese,79.6
+Negeri Sembilan,2022-01-01,female,indian,74.3
+Pahang,2022-01-01,both,overall,72.4
+Pahang,2022-01-01,both,bumi,72.1
+Pahang,2022-01-01,both,bumi_malay,72.2
+Pahang,2022-01-01,both,bumi_other,70.6
+Pahang,2022-01-01,both,chinese,73.9
+Pahang,2022-01-01,both,indian,69.6
+Pahang,2022-01-01,male,overall,70.0
+Pahang,2022-01-01,male,bumi,69.6
+Pahang,2022-01-01,male,bumi_malay,69.7
+Pahang,2022-01-01,male,bumi_other,68.7
+Pahang,2022-01-01,male,chinese,71.3
+Pahang,2022-01-01,male,indian,65.9
+Pahang,2022-01-01,female,overall,75.2
+Pahang,2022-01-01,female,bumi,75.0
+Pahang,2022-01-01,female,bumi_malay,75.1
+Pahang,2022-01-01,female,bumi_other,72.6
+Pahang,2022-01-01,female,chinese,77.4
+Pahang,2022-01-01,female,indian,73.9
+Perak,2022-01-01,both,overall,73.0
+Perak,2022-01-01,both,bumi,71.5
+Perak,2022-01-01,both,bumi_malay,71.6
+Perak,2022-01-01,both,bumi_other,68.3
+Perak,2022-01-01,both,chinese,76.3
+Perak,2022-01-01,both,indian,70.3
+Perak,2022-01-01,male,overall,70.2
+Perak,2022-01-01,male,bumi,68.6
+Perak,2022-01-01,male,bumi_malay,68.7
+Perak,2022-01-01,male,bumi_other,66.5
+Perak,2022-01-01,male,chinese,73.3
+Perak,2022-01-01,male,indian,65.8
+Perak,2022-01-01,female,overall,76.3
+Perak,2022-01-01,female,bumi,74.6
+Perak,2022-01-01,female,bumi_malay,74.8
+Perak,2022-01-01,female,bumi_other,70.3
+Perak,2022-01-01,female,chinese,79.9
+Perak,2022-01-01,female,indian,75.2
+Perlis,2022-01-01,both,overall,72.3
+Perlis,2022-01-01,both,bumi,71.8
+Perlis,2022-01-01,both,bumi_malay,71.8
+Perlis,2022-01-01,both,bumi_other,87.5
+Perlis,2022-01-01,both,chinese,73.9
+Perlis,2022-01-01,both,indian,73.1
+Perlis,2022-01-01,male,overall,69.3
+Perlis,2022-01-01,male,bumi,68.9
+Perlis,2022-01-01,male,bumi_malay,68.8
+Perlis,2022-01-01,male,chinese,69.8
+Perlis,2022-01-01,male,indian,69.7
+Perlis,2022-01-01,female,overall,75.4
+Perlis,2022-01-01,female,bumi,74.8
+Perlis,2022-01-01,female,bumi_malay,74.8
+Perlis,2022-01-01,female,bumi_other,85.7
+Perlis,2022-01-01,female,chinese,78.9
+Perlis,2022-01-01,female,indian,76.6
+Pulau Pinang,2022-01-01,both,overall,73.5
+Pulau Pinang,2022-01-01,both,bumi,71.1
+Pulau Pinang,2022-01-01,both,bumi_malay,71.1
+Pulau Pinang,2022-01-01,both,bumi_other,81.1
+Pulau Pinang,2022-01-01,both,chinese,76.2
+Pulau Pinang,2022-01-01,both,indian,68.1
+Pulau Pinang,2022-01-01,male,overall,71.1
+Pulau Pinang,2022-01-01,male,bumi,69.1
+Pulau Pinang,2022-01-01,male,bumi_malay,69.1
+Pulau Pinang,2022-01-01,male,bumi_other,79.3
+Pulau Pinang,2022-01-01,male,chinese,73.7
+Pulau Pinang,2022-01-01,male,indian,64.3
+Pulau Pinang,2022-01-01,female,overall,76.2
+Pulau Pinang,2022-01-01,female,bumi,73.3
+Pulau Pinang,2022-01-01,female,bumi_malay,73.3
+Pulau Pinang,2022-01-01,female,bumi_other,81.5
+Pulau Pinang,2022-01-01,female,chinese,79.2
+Pulau Pinang,2022-01-01,female,indian,72.4
+Sabah,2022-01-01,both,overall,73.1
+Sabah,2022-01-01,both,bumi,72.2
+Sabah,2022-01-01,both,bumi_malay,67.4
+Sabah,2022-01-01,both,bumi_other,73.0
+Sabah,2022-01-01,both,chinese,71.3
+Sabah,2022-01-01,both,indian,68.5
+Sabah,2022-01-01,male,overall,71.3
+Sabah,2022-01-01,male,bumi,70.3
+Sabah,2022-01-01,male,bumi_malay,65.2
+Sabah,2022-01-01,male,bumi_other,71.2
+Sabah,2022-01-01,male,chinese,69.2
+Sabah,2022-01-01,male,indian,66.5
+Sabah,2022-01-01,female,overall,75.2
+Sabah,2022-01-01,female,bumi,74.4
+Sabah,2022-01-01,female,bumi_malay,69.2
+Sabah,2022-01-01,female,bumi_other,75.0
+Sabah,2022-01-01,female,chinese,74.6
+Sabah,2022-01-01,female,indian,71.9
+Sarawak,2022-01-01,both,overall,74.3
+Sarawak,2022-01-01,both,bumi,73.0
+Sarawak,2022-01-01,both,bumi_malay,73.8
+Sarawak,2022-01-01,both,bumi_other,72.6
+Sarawak,2022-01-01,both,chinese,76.9
+Sarawak,2022-01-01,both,indian,75.4
+Sarawak,2022-01-01,male,overall,71.9
+Sarawak,2022-01-01,male,bumi,70.6
+Sarawak,2022-01-01,male,bumi_malay,71.8
+Sarawak,2022-01-01,male,bumi_other,70.0
+Sarawak,2022-01-01,male,chinese,74.0
+Sarawak,2022-01-01,male,indian,73.8
+Sarawak,2022-01-01,female,overall,77.1
+Sarawak,2022-01-01,female,bumi,75.7
+Sarawak,2022-01-01,female,bumi_malay,76.1
+Sarawak,2022-01-01,female,bumi_other,75.5
+Sarawak,2022-01-01,female,chinese,80.3
+Sarawak,2022-01-01,female,indian,78.5
+Selangor,2022-01-01,both,overall,76.2
+Selangor,2022-01-01,both,bumi,76.9
+Selangor,2022-01-01,both,bumi_malay,77.0
+Selangor,2022-01-01,both,bumi_other,71.6
+Selangor,2022-01-01,both,chinese,77.5
+Selangor,2022-01-01,both,indian,71.4
+Selangor,2022-01-01,male,overall,74.2
+Selangor,2022-01-01,male,bumi,75.1
+Selangor,2022-01-01,male,bumi_malay,75.2
+Selangor,2022-01-01,male,bumi_other,66.6
+Selangor,2022-01-01,male,chinese,74.9
+Selangor,2022-01-01,male,indian,68.3
+Selangor,2022-01-01,female,overall,78.6
+Selangor,2022-01-01,female,bumi,79.0
+Selangor,2022-01-01,female,bumi_malay,79.0
+Selangor,2022-01-01,female,bumi_other,74.6
+Selangor,2022-01-01,female,chinese,80.5
+Selangor,2022-01-01,female,indian,75.1
+Terengganu,2022-01-01,both,overall,71.0
+Terengganu,2022-01-01,both,bumi,70.8
+Terengganu,2022-01-01,both,bumi_malay,70.8
+Terengganu,2022-01-01,both,bumi_other,75.6
+Terengganu,2022-01-01,both,chinese,74.5
+Terengganu,2022-01-01,both,indian,66.3
+Terengganu,2022-01-01,male,overall,68.7
+Terengganu,2022-01-01,male,bumi,68.4
+Terengganu,2022-01-01,male,bumi_malay,68.4
+Terengganu,2022-01-01,male,bumi_other,73.3
+Terengganu,2022-01-01,male,chinese,71.5
+Terengganu,2022-01-01,male,indian,63.8
+Terengganu,2022-01-01,female,overall,73.7
+Terengganu,2022-01-01,female,bumi,73.5
+Terengganu,2022-01-01,female,bumi_malay,73.5
+Terengganu,2022-01-01,female,bumi_other,78.0
+Terengganu,2022-01-01,female,chinese,78.8
+Terengganu,2022-01-01,female,indian,69.9
+W.P. Kuala Lumpur,2022-01-01,both,overall,75.1
+W.P. Kuala Lumpur,2022-01-01,both,bumi,76.0
+W.P. Kuala Lumpur,2022-01-01,both,bumi_malay,76.1
+W.P. Kuala Lumpur,2022-01-01,both,bumi_other,73.9
+W.P. Kuala Lumpur,2022-01-01,both,chinese,75.7
+W.P. Kuala Lumpur,2022-01-01,both,indian,71.5
+W.P. Kuala Lumpur,2022-01-01,male,overall,72.9
+W.P. Kuala Lumpur,2022-01-01,male,bumi,74.1
+W.P. Kuala Lumpur,2022-01-01,male,bumi_malay,74.1
+W.P. Kuala Lumpur,2022-01-01,male,bumi_other,70.4
+W.P. Kuala Lumpur,2022-01-01,male,chinese,73.2
+W.P. Kuala Lumpur,2022-01-01,male,indian,68.5
+W.P. Kuala Lumpur,2022-01-01,female,overall,77.8
+W.P. Kuala Lumpur,2022-01-01,female,bumi,78.2
+W.P. Kuala Lumpur,2022-01-01,female,bumi_malay,78.2
+W.P. Kuala Lumpur,2022-01-01,female,bumi_other,77.3
+W.P. Kuala Lumpur,2022-01-01,female,chinese,78.7
+W.P. Kuala Lumpur,2022-01-01,female,indian,75.0
+W.P. Labuan,2022-01-01,both,overall,74.4
+W.P. Labuan,2022-01-01,both,bumi,74.4
+W.P. Labuan,2022-01-01,both,bumi_malay,67.4
+W.P. Labuan,2022-01-01,both,bumi_other,79.2
+W.P. Labuan,2022-01-01,both,chinese,76.3
+W.P. Labuan,2022-01-01,both,indian,73.9
+W.P. Labuan,2022-01-01,male,overall,72.7
+W.P. Labuan,2022-01-01,male,bumi,73.1
+W.P. Labuan,2022-01-01,male,bumi_malay,66.0
+W.P. Labuan,2022-01-01,male,bumi_other,78.3
+W.P. Labuan,2022-01-01,male,chinese,73.0
+W.P. Labuan,2022-01-01,male,indian,72.7
+W.P. Labuan,2022-01-01,female,overall,76.4
+W.P. Labuan,2022-01-01,female,bumi,75.7
+W.P. Labuan,2022-01-01,female,bumi_malay,68.8
+W.P. Labuan,2022-01-01,female,bumi_other,80.1
+W.P. Labuan,2022-01-01,female,chinese,80.0
+W.P. Labuan,2022-01-01,female,indian,77.3
+W.P. Putrajaya,2022-01-01,both,overall,74.2
+W.P. Putrajaya,2022-01-01,both,bumi,74.2
+W.P. Putrajaya,2022-01-01,both,bumi_malay,74.1
+W.P. Putrajaya,2022-01-01,both,bumi_other,79.7
+W.P. Putrajaya,2022-01-01,both,chinese,70.3
+W.P. Putrajaya,2022-01-01,both,indian,73.3
+W.P. Putrajaya,2022-01-01,male,overall,71.7
+W.P. Putrajaya,2022-01-01,male,bumi,71.5
+W.P. Putrajaya,2022-01-01,male,bumi_malay,71.5
+W.P. Putrajaya,2022-01-01,male,bumi_other,76.5
+W.P. Putrajaya,2022-01-01,male,chinese,67.2
+W.P. Putrajaya,2022-01-01,male,indian,72.1
+W.P. Putrajaya,2022-01-01,female,overall,76.7
+W.P. Putrajaya,2022-01-01,female,bumi,76.7
+W.P. Putrajaya,2022-01-01,female,bumi_malay,76.6
+W.P. Putrajaya,2022-01-01,female,bumi_other,85.4
+W.P. Putrajaya,2022-01-01,female,chinese,80.7
+W.P. Putrajaya,2022-01-01,female,indian,74.3
+Johor,2023-01-01,both,overall,73.7
+Johor,2023-01-01,both,citizen,73.2
+Johor,2023-01-01,both,bumi,72.3
+Johor,2023-01-01,both,bumi_malay,72.3
+Johor,2023-01-01,both,bumi_other,72.7
+Johor,2023-01-01,both,chinese,75.7
+Johor,2023-01-01,both,indian,69.6
+Johor,2023-01-01,both,noncitizen,79.5
+Johor,2023-01-01,male,overall,71.6
+Johor,2023-01-01,male,citizen,70.8
+Johor,2023-01-01,male,bumi,70.1
+Johor,2023-01-01,male,bumi_malay,70.1
+Johor,2023-01-01,male,bumi_other,71.5
+Johor,2023-01-01,male,chinese,73.1
+Johor,2023-01-01,male,indian,66.0
+Johor,2023-01-01,male,noncitizen,79.3
+Johor,2023-01-01,female,overall,76.2
+Johor,2023-01-01,female,citizen,76.0
+Johor,2023-01-01,female,bumi,74.8
+Johor,2023-01-01,female,bumi_malay,74.8
+Johor,2023-01-01,female,bumi_other,73.3
+Johor,2023-01-01,female,chinese,79.0
+Johor,2023-01-01,female,indian,73.7
+Johor,2023-01-01,female,noncitizen,79.0
+Kedah,2023-01-01,both,overall,71.7
+Kedah,2023-01-01,both,citizen,71.5
+Kedah,2023-01-01,both,bumi,71.2
+Kedah,2023-01-01,both,bumi_malay,71.2
+Kedah,2023-01-01,both,bumi_other,78.5
+Kedah,2023-01-01,both,chinese,74.5
+Kedah,2023-01-01,both,indian,68.7
+Kedah,2023-01-01,both,noncitizen,81.3
+Kedah,2023-01-01,male,overall,69.1
+Kedah,2023-01-01,male,citizen,68.6
+Kedah,2023-01-01,male,bumi,68.6
+Kedah,2023-01-01,male,bumi_malay,68.6
+Kedah,2023-01-01,male,bumi_other,76.8
+Kedah,2023-01-01,male,chinese,71.3
+Kedah,2023-01-01,male,indian,64.2
+Kedah,2023-01-01,male,noncitizen,82.1
+Kedah,2023-01-01,female,overall,74.6
+Kedah,2023-01-01,female,citizen,74.5
+Kedah,2023-01-01,female,bumi,74.0
+Kedah,2023-01-01,female,bumi_malay,74.0
+Kedah,2023-01-01,female,bumi_other,79.4
+Kedah,2023-01-01,female,chinese,78.4
+Kedah,2023-01-01,female,indian,73.4
+Kedah,2023-01-01,female,noncitizen,79.2
+Kelantan,2023-01-01,both,overall,71.8
+Kelantan,2023-01-01,both,citizen,71.6
+Kelantan,2023-01-01,both,bumi,71.5
+Kelantan,2023-01-01,both,bumi_malay,71.6
+Kelantan,2023-01-01,both,bumi_other,66.7
+Kelantan,2023-01-01,both,chinese,74.7
+Kelantan,2023-01-01,both,indian,70.4
+Kelantan,2023-01-01,both,noncitizen,77.9
+Kelantan,2023-01-01,male,overall,69.3
+Kelantan,2023-01-01,male,citizen,69.1
+Kelantan,2023-01-01,male,bumi,69.0
+Kelantan,2023-01-01,male,bumi_malay,69.0
+Kelantan,2023-01-01,male,bumi_other,65.9
+Kelantan,2023-01-01,male,chinese,71.5
+Kelantan,2023-01-01,male,indian,66.1
+Kelantan,2023-01-01,male,noncitizen,75.7
+Kelantan,2023-01-01,female,overall,74.6
+Kelantan,2023-01-01,female,citizen,74.5
+Kelantan,2023-01-01,female,bumi,74.3
+Kelantan,2023-01-01,female,bumi_malay,74.4
+Kelantan,2023-01-01,female,bumi_other,67.7
+Kelantan,2023-01-01,female,chinese,78.9
+Kelantan,2023-01-01,female,indian,76.9
+Kelantan,2023-01-01,female,noncitizen,79.7
+Melaka,2023-01-01,both,overall,73.1
+Melaka,2023-01-01,both,citizen,72.9
+Melaka,2023-01-01,both,bumi,72.0
+Melaka,2023-01-01,both,bumi_malay,72.0
+Melaka,2023-01-01,both,bumi_other,75.3
+Melaka,2023-01-01,both,chinese,76.3
+Melaka,2023-01-01,both,indian,69.5
+Melaka,2023-01-01,both,noncitizen,71.7
+Melaka,2023-01-01,male,overall,70.6
+Melaka,2023-01-01,male,citizen,70.2
+Melaka,2023-01-01,male,bumi,69.4
+Melaka,2023-01-01,male,bumi_malay,69.4
+Melaka,2023-01-01,male,bumi_other,70.7
+Melaka,2023-01-01,male,chinese,73.7
+Melaka,2023-01-01,male,indian,65.8
+Melaka,2023-01-01,male,noncitizen,68.6
+Melaka,2023-01-01,female,overall,75.9
+Melaka,2023-01-01,female,citizen,75.8
+Melaka,2023-01-01,female,bumi,74.6
+Melaka,2023-01-01,female,bumi_malay,74.6
+Melaka,2023-01-01,female,bumi_other,80.1
+Melaka,2023-01-01,female,chinese,79.2
+Melaka,2023-01-01,female,indian,73.3
+Melaka,2023-01-01,female,noncitizen,73.5
+Negeri Sembilan,2023-01-01,both,overall,72.9
+Negeri Sembilan,2023-01-01,both,citizen,72.7
+Negeri Sembilan,2023-01-01,both,bumi,72.1
+Negeri Sembilan,2023-01-01,both,bumi_malay,72.2
+Negeri Sembilan,2023-01-01,both,bumi_other,70.1
+Negeri Sembilan,2023-01-01,both,chinese,76.3
+Negeri Sembilan,2023-01-01,both,indian,69.8
+Negeri Sembilan,2023-01-01,both,noncitizen,76.0
+Negeri Sembilan,2023-01-01,male,overall,70.3
+Negeri Sembilan,2023-01-01,male,citizen,70.0
+Negeri Sembilan,2023-01-01,male,bumi,69.6
+Negeri Sembilan,2023-01-01,male,bumi_malay,69.7
+Negeri Sembilan,2023-01-01,male,bumi_other,68.7
+Negeri Sembilan,2023-01-01,male,chinese,73.4
+Negeri Sembilan,2023-01-01,male,indian,66.4
+Negeri Sembilan,2023-01-01,male,noncitizen,75.7
+Negeri Sembilan,2023-01-01,female,overall,75.9
+Negeri Sembilan,2023-01-01,female,citizen,75.8
+Negeri Sembilan,2023-01-01,female,bumi,74.9
+Negeri Sembilan,2023-01-01,female,bumi_malay,75.0
+Negeri Sembilan,2023-01-01,female,bumi_other,71.6
+Negeri Sembilan,2023-01-01,female,chinese,79.7
+Negeri Sembilan,2023-01-01,female,indian,73.7
+Negeri Sembilan,2023-01-01,female,noncitizen,76.5
+Pahang,2023-01-01,both,overall,72.3
+Pahang,2023-01-01,both,citizen,72.1
+Pahang,2023-01-01,both,bumi,71.9
+Pahang,2023-01-01,both,bumi_malay,72.1
+Pahang,2023-01-01,both,bumi_other,70.0
+Pahang,2023-01-01,both,chinese,73.9
+Pahang,2023-01-01,both,indian,69.5
+Pahang,2023-01-01,both,noncitizen,65.9
+Pahang,2023-01-01,male,overall,69.9
+Pahang,2023-01-01,male,citizen,69.5
+Pahang,2023-01-01,male,bumi,69.4
+Pahang,2023-01-01,male,bumi_malay,69.6
+Pahang,2023-01-01,male,bumi_other,68.1
+Pahang,2023-01-01,male,chinese,71.1
+Pahang,2023-01-01,male,indian,66.1
+Pahang,2023-01-01,male,noncitizen,64.2
+Pahang,2023-01-01,female,overall,75.1
+Pahang,2023-01-01,female,citizen,75.1
+Pahang,2023-01-01,female,bumi,74.8
+Pahang,2023-01-01,female,bumi_malay,75.0
+Pahang,2023-01-01,female,bumi_other,72.0
+Pahang,2023-01-01,female,chinese,77.6
+Pahang,2023-01-01,female,indian,73.5
+Pahang,2023-01-01,female,noncitizen,69.6
+Perak,2023-01-01,both,overall,72.9
+Perak,2023-01-01,both,citizen,72.7
+Perak,2023-01-01,both,bumi,71.3
+Perak,2023-01-01,both,bumi_malay,71.4
+Perak,2023-01-01,both,bumi_other,68.3
+Perak,2023-01-01,both,chinese,76.4
+Perak,2023-01-01,both,indian,70.2
+Perak,2023-01-01,both,noncitizen,71.5
+Perak,2023-01-01,male,overall,70.1
+Perak,2023-01-01,male,citizen,69.5
+Perak,2023-01-01,male,bumi,68.4
+Perak,2023-01-01,male,bumi_malay,68.6
+Perak,2023-01-01,male,bumi_other,65.5
+Perak,2023-01-01,male,chinese,73.3
+Perak,2023-01-01,male,indian,65.7
+Perak,2023-01-01,male,noncitizen,69.3
+Perak,2023-01-01,female,overall,76.2
+Perak,2023-01-01,female,citizen,76.2
+Perak,2023-01-01,female,bumi,74.4
+Perak,2023-01-01,female,bumi_malay,74.5
+Perak,2023-01-01,female,bumi_other,71.5
+Perak,2023-01-01,female,chinese,80.0
+Perak,2023-01-01,female,indian,75.1
+Perak,2023-01-01,female,noncitizen,73.9
+Perlis,2023-01-01,both,overall,72.4
+Perlis,2023-01-01,both,citizen,72.2
+Perlis,2023-01-01,both,bumi,71.9
+Perlis,2023-01-01,both,bumi_malay,71.9
+Perlis,2023-01-01,both,chinese,74.1
+Perlis,2023-01-01,both,indian,70.5
+Perlis,2023-01-01,both,noncitizen,77.9
+Perlis,2023-01-01,male,overall,69.5
+Perlis,2023-01-01,male,citizen,69.3
+Perlis,2023-01-01,male,bumi,69.1
+Perlis,2023-01-01,male,bumi_malay,69.0
+Perlis,2023-01-01,male,chinese,70.8
+Perlis,2023-01-01,male,indian,67.4
+Perlis,2023-01-01,male,noncitizen,75.6
+Perlis,2023-01-01,female,overall,75.5
+Perlis,2023-01-01,female,citizen,75.2
+Perlis,2023-01-01,female,bumi,74.9
+Perlis,2023-01-01,female,bumi_malay,74.9
+Perlis,2023-01-01,female,chinese,78.1
+Perlis,2023-01-01,female,indian,73.8
+Perlis,2023-01-01,female,noncitizen,79.7
+Pulau Pinang,2023-01-01,both,overall,73.7
+Pulau Pinang,2023-01-01,both,citizen,73.5
+Pulau Pinang,2023-01-01,both,bumi,71.3
+Pulau Pinang,2023-01-01,both,bumi_malay,71.3
+Pulau Pinang,2023-01-01,both,bumi_other,79.7
+Pulau Pinang,2023-01-01,both,chinese,76.4
+Pulau Pinang,2023-01-01,both,indian,68.4
+Pulau Pinang,2023-01-01,both,noncitizen,76.0
+Pulau Pinang,2023-01-01,male,overall,71.3
+Pulau Pinang,2023-01-01,male,citizen,71.0
+Pulau Pinang,2023-01-01,male,bumi,69.3
+Pulau Pinang,2023-01-01,male,bumi_malay,69.2
+Pulau Pinang,2023-01-01,male,bumi_other,77.4
+Pulau Pinang,2023-01-01,male,chinese,73.8
+Pulau Pinang,2023-01-01,male,indian,64.4
+Pulau Pinang,2023-01-01,male,noncitizen,75.4
+Pulau Pinang,2023-01-01,female,overall,76.5
+Pulau Pinang,2023-01-01,female,citizen,76.4
+Pulau Pinang,2023-01-01,female,bumi,73.5
+Pulau Pinang,2023-01-01,female,bumi_malay,73.5
+Pulau Pinang,2023-01-01,female,bumi_other,82.1
+Pulau Pinang,2023-01-01,female,chinese,79.3
+Pulau Pinang,2023-01-01,female,indian,72.9
+Pulau Pinang,2023-01-01,female,noncitizen,76.7
+Sabah,2023-01-01,both,overall,73.7
+Sabah,2023-01-01,both,citizen,72.2
+Sabah,2023-01-01,both,bumi,72.6
+Sabah,2023-01-01,both,bumi_malay,67.7
+Sabah,2023-01-01,both,bumi_other,73.4
+Sabah,2023-01-01,both,chinese,71.9
+Sabah,2023-01-01,both,indian,68.0
+Sabah,2023-01-01,both,noncitizen,81.9
+Sabah,2023-01-01,male,overall,71.9
+Sabah,2023-01-01,male,citizen,70.1
+Sabah,2023-01-01,male,bumi,70.6
+Sabah,2023-01-01,male,bumi_malay,65.4
+Sabah,2023-01-01,male,bumi_other,71.5
+Sabah,2023-01-01,male,chinese,69.5
+Sabah,2023-01-01,male,indian,64.9
+Sabah,2023-01-01,male,noncitizen,81.8
+Sabah,2023-01-01,female,overall,75.9
+Sabah,2023-01-01,female,citizen,74.7
+Sabah,2023-01-01,female,bumi,75.0
+Sabah,2023-01-01,female,bumi_malay,69.8
+Sabah,2023-01-01,female,bumi_other,75.5
+Sabah,2023-01-01,female,chinese,75.3
+Sabah,2023-01-01,female,indian,74.1
+Sabah,2023-01-01,female,noncitizen,81.9
+Sarawak,2023-01-01,both,overall,74.5
+Sarawak,2023-01-01,both,citizen,74.2
+Sarawak,2023-01-01,both,bumi,73.2
+Sarawak,2023-01-01,both,bumi_malay,74.1
+Sarawak,2023-01-01,both,bumi_other,72.8
+Sarawak,2023-01-01,both,chinese,77.1
+Sarawak,2023-01-01,both,indian,73.0
+Sarawak,2023-01-01,both,noncitizen,80.0
+Sarawak,2023-01-01,male,overall,72.1
+Sarawak,2023-01-01,male,citizen,71.7
+Sarawak,2023-01-01,male,bumi,70.8
+Sarawak,2023-01-01,male,bumi_malay,72.0
+Sarawak,2023-01-01,male,bumi_other,70.2
+Sarawak,2023-01-01,male,chinese,74.1
+Sarawak,2023-01-01,male,indian,70.3
+Sarawak,2023-01-01,male,noncitizen,79.2
+Sarawak,2023-01-01,female,overall,77.2
+Sarawak,2023-01-01,female,citizen,77.1
+Sarawak,2023-01-01,female,bumi,75.8
+Sarawak,2023-01-01,female,bumi_malay,76.3
+Sarawak,2023-01-01,female,bumi_other,75.6
+Sarawak,2023-01-01,female,chinese,80.6
+Sarawak,2023-01-01,female,indian,77.2
+Sarawak,2023-01-01,female,noncitizen,81.2
+Selangor,2023-01-01,both,overall,76.4
+Selangor,2023-01-01,both,citizen,76.3
+Selangor,2023-01-01,both,bumi,77.0
+Selangor,2023-01-01,both,bumi_malay,77.1
+Selangor,2023-01-01,both,bumi_other,71.1
+Selangor,2023-01-01,both,chinese,77.6
+Selangor,2023-01-01,both,indian,71.4
+Selangor,2023-01-01,both,noncitizen,73.6
+Selangor,2023-01-01,male,overall,74.4
+Selangor,2023-01-01,male,citizen,74.1
+Selangor,2023-01-01,male,bumi,75.2
+Selangor,2023-01-01,male,bumi_malay,75.3
+Selangor,2023-01-01,male,bumi_other,66.6
+Selangor,2023-01-01,male,chinese,75.0
+Selangor,2023-01-01,male,indian,68.2
+Selangor,2023-01-01,male,noncitizen,75.5
+Selangor,2023-01-01,female,overall,78.8
+Selangor,2023-01-01,female,citizen,78.9
+Selangor,2023-01-01,female,bumi,79.1
+Selangor,2023-01-01,female,bumi_malay,79.1
+Selangor,2023-01-01,female,bumi_other,73.3
+Selangor,2023-01-01,female,chinese,80.7
+Selangor,2023-01-01,female,indian,75.3
+Selangor,2023-01-01,female,noncitizen,66.6
+Terengganu,2023-01-01,both,overall,71.1
+Terengganu,2023-01-01,both,citizen,70.9
+Terengganu,2023-01-01,both,bumi,70.8
+Terengganu,2023-01-01,both,bumi_malay,70.8
+Terengganu,2023-01-01,both,bumi_other,75.7
+Terengganu,2023-01-01,both,chinese,74.9
+Terengganu,2023-01-01,both,indian,64.9
+Terengganu,2023-01-01,both,noncitizen,75.9
+Terengganu,2023-01-01,male,overall,68.8
+Terengganu,2023-01-01,male,citizen,68.5
+Terengganu,2023-01-01,male,bumi,68.5
+Terengganu,2023-01-01,male,bumi_malay,68.5
+Terengganu,2023-01-01,male,bumi_other,75.0
+Terengganu,2023-01-01,male,chinese,72.1
+Terengganu,2023-01-01,male,indian,62.2
+Terengganu,2023-01-01,male,noncitizen,75.4
+Terengganu,2023-01-01,female,overall,73.6
+Terengganu,2023-01-01,female,citizen,73.5
+Terengganu,2023-01-01,female,bumi,73.4
+Terengganu,2023-01-01,female,bumi_malay,73.4
+Terengganu,2023-01-01,female,bumi_other,77.0
+Terengganu,2023-01-01,female,chinese,78.5
+Terengganu,2023-01-01,female,indian,68.1
+Terengganu,2023-01-01,female,noncitizen,76.6
+W.P. Kuala Lumpur,2023-01-01,both,overall,75.4
+W.P. Kuala Lumpur,2023-01-01,both,citizen,75.5
+W.P. Kuala Lumpur,2023-01-01,both,bumi,76.3
+W.P. Kuala Lumpur,2023-01-01,both,bumi_malay,76.3
+W.P. Kuala Lumpur,2023-01-01,both,bumi_other,75.0
+W.P. Kuala Lumpur,2023-01-01,both,chinese,75.9
+W.P. Kuala Lumpur,2023-01-01,both,indian,71.3
+W.P. Kuala Lumpur,2023-01-01,both,noncitizen,69.7
+W.P. Kuala Lumpur,2023-01-01,male,overall,73.3
+W.P. Kuala Lumpur,2023-01-01,male,citizen,73.1
+W.P. Kuala Lumpur,2023-01-01,male,bumi,74.4
+W.P. Kuala Lumpur,2023-01-01,male,bumi_malay,74.4
+W.P. Kuala Lumpur,2023-01-01,male,bumi_other,72.3
+W.P. Kuala Lumpur,2023-01-01,male,chinese,73.4
+W.P. Kuala Lumpur,2023-01-01,male,indian,68.4
+W.P. Kuala Lumpur,2023-01-01,male,noncitizen,68.2
+W.P. Kuala Lumpur,2023-01-01,female,overall,77.9
+W.P. Kuala Lumpur,2023-01-01,female,citizen,78.1
+W.P. Kuala Lumpur,2023-01-01,female,bumi,78.3
+W.P. Kuala Lumpur,2023-01-01,female,bumi_malay,78.3
+W.P. Kuala Lumpur,2023-01-01,female,bumi_other,77.5
+W.P. Kuala Lumpur,2023-01-01,female,chinese,78.9
+W.P. Kuala Lumpur,2023-01-01,female,indian,74.7
+W.P. Kuala Lumpur,2023-01-01,female,noncitizen,71.5
+W.P. Labuan,2023-01-01,both,overall,75.7
+W.P. Labuan,2023-01-01,both,citizen,75.8
+W.P. Labuan,2023-01-01,both,bumi,75.5
+W.P. Labuan,2023-01-01,both,bumi_malay,68.6
+W.P. Labuan,2023-01-01,both,bumi_other,79.7
+W.P. Labuan,2023-01-01,both,chinese,77.9
+W.P. Labuan,2023-01-01,both,indian,75.7
+W.P. Labuan,2023-01-01,both,noncitizen,74.3
+W.P. Labuan,2023-01-01,male,overall,73.9
+W.P. Labuan,2023-01-01,male,citizen,73.8
+W.P. Labuan,2023-01-01,male,bumi,74.0
+W.P. Labuan,2023-01-01,male,bumi_malay,66.8
+W.P. Labuan,2023-01-01,male,bumi_other,78.8
+W.P. Labuan,2023-01-01,male,chinese,74.8
+W.P. Labuan,2023-01-01,male,indian,73.6
+W.P. Labuan,2023-01-01,male,noncitizen,73.3
+W.P. Labuan,2023-01-01,female,overall,77.8
+W.P. Labuan,2023-01-01,female,citizen,78.0
+W.P. Labuan,2023-01-01,female,bumi,77.0
+W.P. Labuan,2023-01-01,female,bumi_malay,70.3
+W.P. Labuan,2023-01-01,female,bumi_other,80.7
+W.P. Labuan,2023-01-01,female,chinese,81.4
+W.P. Labuan,2023-01-01,female,indian,83.1
+W.P. Labuan,2023-01-01,female,noncitizen,75.4
+W.P. Putrajaya,2023-01-01,both,overall,73.8
+W.P. Putrajaya,2023-01-01,both,citizen,73.6
+W.P. Putrajaya,2023-01-01,both,bumi,73.6
+W.P. Putrajaya,2023-01-01,both,bumi_malay,73.6
+W.P. Putrajaya,2023-01-01,both,bumi_other,69.3
+W.P. Putrajaya,2023-01-01,both,chinese,69.5
+W.P. Putrajaya,2023-01-01,both,indian,74.2
+W.P. Putrajaya,2023-01-01,male,overall,71.4
+W.P. Putrajaya,2023-01-01,male,citizen,71.2
+W.P. Putrajaya,2023-01-01,male,bumi,71.1
+W.P. Putrajaya,2023-01-01,male,bumi_malay,71.2
+W.P. Putrajaya,2023-01-01,male,bumi_other,67.1
+W.P. Putrajaya,2023-01-01,male,chinese,57.2
+W.P. Putrajaya,2023-01-01,male,indian,76.3
+W.P. Putrajaya,2023-01-01,female,overall,76.1
+W.P. Putrajaya,2023-01-01,female,citizen,75.9
+W.P. Putrajaya,2023-01-01,female,bumi,75.9
+W.P. Putrajaya,2023-01-01,female,bumi_malay,75.9
+W.P. Putrajaya,2023-01-01,female,bumi_other,83.5
+W.P. Putrajaya,2023-01-01,female,chinese,83.4
+W.P. Putrajaya,2023-01-01,female,indian,71.2
+Johor,2024-01-01,both,overall,74.4
+Johor,2024-01-01,both,citizen,73.8
+Johor,2024-01-01,both,bumi,73.1
+Johor,2024-01-01,both,bumi_malay,73.1
+Johor,2024-01-01,both,bumi_other,74.2
+Johor,2024-01-01,both,chinese,76.0
+Johor,2024-01-01,both,indian,70.0
+Johor,2024-01-01,both,noncitizen,82.5
+Johor,2024-01-01,male,overall,72.3
+Johor,2024-01-01,male,citizen,71.3
+Johor,2024-01-01,male,bumi,70.8
+Johor,2024-01-01,male,bumi_malay,70.8
+Johor,2024-01-01,male,bumi_other,72.6
+Johor,2024-01-01,male,chinese,73.3
+Johor,2024-01-01,male,indian,66.4
+Johor,2024-01-01,male,noncitizen,82.2
+Johor,2024-01-01,female,overall,77.0
+Johor,2024-01-01,female,citizen,76.7
+Johor,2024-01-01,female,bumi,75.7
+Johor,2024-01-01,female,bumi_malay,75.7
+Johor,2024-01-01,female,bumi_other,75.5
+Johor,2024-01-01,female,chinese,79.2
+Johor,2024-01-01,female,indian,74.0
+Johor,2024-01-01,female,noncitizen,82.7
+Kedah,2024-01-01,both,overall,72.7
+Kedah,2024-01-01,both,citizen,72.4
+Kedah,2024-01-01,both,bumi,72.2
+Kedah,2024-01-01,both,bumi_malay,72.2
+Kedah,2024-01-01,both,bumi_other,77.3
+Kedah,2024-01-01,both,chinese,75.1
+Kedah,2024-01-01,both,indian,70.1
+Kedah,2024-01-01,both,noncitizen,83.9
+Kedah,2024-01-01,male,overall,70.0
+Kedah,2024-01-01,male,citizen,69.5
+Kedah,2024-01-01,male,bumi,69.5
+Kedah,2024-01-01,male,bumi_malay,69.4
+Kedah,2024-01-01,male,bumi_other,75.1
+Kedah,2024-01-01,male,chinese,72.0
+Kedah,2024-01-01,male,indian,65.6
+Kedah,2024-01-01,male,noncitizen,83.9
+Kedah,2024-01-01,female,overall,75.7
+Kedah,2024-01-01,female,citizen,75.6
+Kedah,2024-01-01,female,bumi,75.1
+Kedah,2024-01-01,female,bumi_malay,75.1
+Kedah,2024-01-01,female,bumi_other,78.9
+Kedah,2024-01-01,female,chinese,78.7
+Kedah,2024-01-01,female,indian,74.8
+Kedah,2024-01-01,female,noncitizen,83.8
+Kelantan,2024-01-01,both,overall,72.9
+Kelantan,2024-01-01,both,citizen,72.7
+Kelantan,2024-01-01,both,bumi,72.6
+Kelantan,2024-01-01,both,bumi_malay,72.7
+Kelantan,2024-01-01,both,bumi_other,68.9
+Kelantan,2024-01-01,both,chinese,75.7
+Kelantan,2024-01-01,both,indian,72.2
+Kelantan,2024-01-01,both,noncitizen,81.7
+Kelantan,2024-01-01,male,overall,70.3
+Kelantan,2024-01-01,male,citizen,70.1
+Kelantan,2024-01-01,male,bumi,70.0
+Kelantan,2024-01-01,male,bumi_malay,70.0
+Kelantan,2024-01-01,male,bumi_other,68.6
+Kelantan,2024-01-01,male,chinese,72.9
+Kelantan,2024-01-01,male,indian,68.7
+Kelantan,2024-01-01,male,noncitizen,79.9
+Kelantan,2024-01-01,female,overall,75.7
+Kelantan,2024-01-01,female,citizen,75.6
+Kelantan,2024-01-01,female,bumi,75.5
+Kelantan,2024-01-01,female,bumi_malay,75.5
+Kelantan,2024-01-01,female,bumi_other,69.3
+Kelantan,2024-01-01,female,chinese,79.3
+Kelantan,2024-01-01,female,indian,77.4
+Kelantan,2024-01-01,female,noncitizen,82.8
+Melaka,2024-01-01,both,overall,73.9
+Melaka,2024-01-01,both,citizen,73.7
+Melaka,2024-01-01,both,bumi,72.8
+Melaka,2024-01-01,both,bumi_malay,72.8
+Melaka,2024-01-01,both,bumi_other,76.5
+Melaka,2024-01-01,both,chinese,76.7
+Melaka,2024-01-01,both,indian,70.4
+Melaka,2024-01-01,both,noncitizen,73.1
+Melaka,2024-01-01,male,overall,71.4
+Melaka,2024-01-01,male,citizen,70.9
+Melaka,2024-01-01,male,bumi,70.3
+Melaka,2024-01-01,male,bumi_malay,70.2
+Melaka,2024-01-01,male,bumi_other,72.6
+Melaka,2024-01-01,male,chinese,74.1
+Melaka,2024-01-01,male,indian,66.4
+Melaka,2024-01-01,male,noncitizen,72.0
+Melaka,2024-01-01,female,overall,76.8
+Melaka,2024-01-01,female,citizen,76.7
+Melaka,2024-01-01,female,bumi,75.6
+Melaka,2024-01-01,female,bumi_malay,75.6
+Melaka,2024-01-01,female,bumi_other,80.4
+Melaka,2024-01-01,female,chinese,79.8
+Melaka,2024-01-01,female,indian,74.6
+Melaka,2024-01-01,female,noncitizen,74.3
+Negeri Sembilan,2024-01-01,both,overall,73.5
+Negeri Sembilan,2024-01-01,both,citizen,73.3
+Negeri Sembilan,2024-01-01,both,bumi,72.7
+Negeri Sembilan,2024-01-01,both,bumi_malay,72.8
+Negeri Sembilan,2024-01-01,both,bumi_other,69.9
+Negeri Sembilan,2024-01-01,both,chinese,76.7
+Negeri Sembilan,2024-01-01,both,indian,70.5
+Negeri Sembilan,2024-01-01,both,noncitizen,79.0
+Negeri Sembilan,2024-01-01,male,overall,70.9
+Negeri Sembilan,2024-01-01,male,citizen,70.5
+Negeri Sembilan,2024-01-01,male,bumi,70.2
+Negeri Sembilan,2024-01-01,male,bumi_malay,70.3
+Negeri Sembilan,2024-01-01,male,bumi_other,68.5
+Negeri Sembilan,2024-01-01,male,chinese,73.7
+Negeri Sembilan,2024-01-01,male,indian,67.1
+Negeri Sembilan,2024-01-01,male,noncitizen,78.6
+Negeri Sembilan,2024-01-01,female,overall,76.5
+Negeri Sembilan,2024-01-01,female,citizen,76.5
+Negeri Sembilan,2024-01-01,female,bumi,75.5
+Negeri Sembilan,2024-01-01,female,bumi_malay,75.7
+Negeri Sembilan,2024-01-01,female,bumi_other,71.3
+Negeri Sembilan,2024-01-01,female,chinese,80.2
+Negeri Sembilan,2024-01-01,female,indian,74.3
+Negeri Sembilan,2024-01-01,female,noncitizen,79.7
+Pahang,2024-01-01,both,overall,72.8
+Pahang,2024-01-01,both,citizen,72.6
+Pahang,2024-01-01,both,bumi,72.4
+Pahang,2024-01-01,both,bumi_malay,72.7
+Pahang,2024-01-01,both,bumi_other,70.1
+Pahang,2024-01-01,both,chinese,74.2
+Pahang,2024-01-01,both,indian,70.5
+Pahang,2024-01-01,both,noncitizen,66.8
+Pahang,2024-01-01,male,overall,70.5
+Pahang,2024-01-01,male,citizen,70.0
+Pahang,2024-01-01,male,bumi,70.0
+Pahang,2024-01-01,male,bumi_malay,70.1
+Pahang,2024-01-01,male,bumi_other,68.3
+Pahang,2024-01-01,male,chinese,71.2
+Pahang,2024-01-01,male,indian,67.1
+Pahang,2024-01-01,male,noncitizen,65.1
+Pahang,2024-01-01,female,overall,75.6
+Pahang,2024-01-01,female,citizen,75.6
+Pahang,2024-01-01,female,bumi,75.2
+Pahang,2024-01-01,female,bumi_malay,75.5
+Pahang,2024-01-01,female,bumi_other,72.1
+Pahang,2024-01-01,female,chinese,77.9
+Pahang,2024-01-01,female,indian,74.6
+Pahang,2024-01-01,female,noncitizen,70.5
+Perak,2024-01-01,both,overall,73.5
+Perak,2024-01-01,both,citizen,73.2
+Perak,2024-01-01,both,bumi,72.0
+Perak,2024-01-01,both,bumi_malay,72.1
+Perak,2024-01-01,both,bumi_other,70.3
+Perak,2024-01-01,both,chinese,76.6
+Perak,2024-01-01,both,indian,70.8
+Perak,2024-01-01,both,noncitizen,73.7
+Perak,2024-01-01,male,overall,70.7
+Perak,2024-01-01,male,citizen,70.1
+Perak,2024-01-01,male,bumi,69.1
+Perak,2024-01-01,male,bumi_malay,69.3
+Perak,2024-01-01,male,bumi_other,67.4
+Perak,2024-01-01,male,chinese,73.4
+Perak,2024-01-01,male,indian,66.5
+Perak,2024-01-01,male,noncitizen,71.7
+Perak,2024-01-01,female,overall,76.7
+Perak,2024-01-01,female,citizen,76.7
+Perak,2024-01-01,female,bumi,75.0
+Perak,2024-01-01,female,bumi_malay,75.1
+Perak,2024-01-01,female,bumi_other,73.7
+Perak,2024-01-01,female,chinese,80.4
+Perak,2024-01-01,female,indian,75.4
+Perak,2024-01-01,female,noncitizen,75.9
+Perlis,2024-01-01,both,overall,73.0
+Perlis,2024-01-01,both,citizen,72.7
+Perlis,2024-01-01,both,bumi,72.4
+Perlis,2024-01-01,both,bumi_malay,72.4
+Perlis,2024-01-01,both,chinese,75.1
+Perlis,2024-01-01,both,indian,72.8
+Perlis,2024-01-01,both,noncitizen,77.8
+Perlis,2024-01-01,male,overall,70.2
+Perlis,2024-01-01,male,citizen,69.9
+Perlis,2024-01-01,male,bumi,69.6
+Perlis,2024-01-01,male,bumi_malay,69.5
+Perlis,2024-01-01,male,chinese,72.6
+Perlis,2024-01-01,male,indian,70.8
+Perlis,2024-01-01,male,noncitizen,74.5
+Perlis,2024-01-01,female,overall,75.9
+Perlis,2024-01-01,female,citizen,75.6
+Perlis,2024-01-01,female,bumi,75.4
+Perlis,2024-01-01,female,bumi_malay,75.3
+Perlis,2024-01-01,female,chinese,78.1
+Perlis,2024-01-01,female,indian,74.8
+Perlis,2024-01-01,female,noncitizen,81.8
+Pulau Pinang,2024-01-01,both,overall,74.6
+Pulau Pinang,2024-01-01,both,citizen,74.3
+Pulau Pinang,2024-01-01,both,bumi,72.2
+Pulau Pinang,2024-01-01,both,bumi_malay,72.1
+Pulau Pinang,2024-01-01,both,bumi_other,80.4
+Pulau Pinang,2024-01-01,both,chinese,77.1
+Pulau Pinang,2024-01-01,both,indian,69.0
+Pulau Pinang,2024-01-01,both,noncitizen,79.7
+Pulau Pinang,2024-01-01,male,overall,72.2
+Pulau Pinang,2024-01-01,male,citizen,71.8
+Pulau Pinang,2024-01-01,male,bumi,70.1
+Pulau Pinang,2024-01-01,male,bumi_malay,70.0
+Pulau Pinang,2024-01-01,male,bumi_other,78.6
+Pulau Pinang,2024-01-01,male,chinese,74.5
+Pulau Pinang,2024-01-01,male,indian,65.4
+Pulau Pinang,2024-01-01,male,noncitizen,79.6
+Pulau Pinang,2024-01-01,female,overall,77.3
+Pulau Pinang,2024-01-01,female,citizen,77.1
+Pulau Pinang,2024-01-01,female,bumi,74.4
+Pulau Pinang,2024-01-01,female,bumi_malay,74.4
+Pulau Pinang,2024-01-01,female,bumi_other,82.5
+Pulau Pinang,2024-01-01,female,chinese,80.0
+Pulau Pinang,2024-01-01,female,indian,72.9
+Pulau Pinang,2024-01-01,female,noncitizen,79.8
+Sabah,2024-01-01,both,overall,74.7
+Sabah,2024-01-01,both,citizen,73.0
+Sabah,2024-01-01,both,bumi,73.3
+Sabah,2024-01-01,both,bumi_malay,68.1
+Sabah,2024-01-01,both,bumi_other,74.2
+Sabah,2024-01-01,both,chinese,72.5
+Sabah,2024-01-01,both,indian,68.7
+Sabah,2024-01-01,both,noncitizen,84.0
+Sabah,2024-01-01,male,overall,72.7
+Sabah,2024-01-01,male,citizen,70.7
+Sabah,2024-01-01,male,bumi,71.1
+Sabah,2024-01-01,male,bumi_malay,65.8
+Sabah,2024-01-01,male,bumi_other,72.1
+Sabah,2024-01-01,male,chinese,70.0
+Sabah,2024-01-01,male,indian,64.7
+Sabah,2024-01-01,male,noncitizen,83.5
+Sabah,2024-01-01,female,overall,77.0
+Sabah,2024-01-01,female,citizen,75.6
+Sabah,2024-01-01,female,bumi,75.8
+Sabah,2024-01-01,female,bumi_malay,70.4
+Sabah,2024-01-01,female,bumi_other,76.4
+Sabah,2024-01-01,female,chinese,76.0
+Sabah,2024-01-01,female,indian,76.9
+Sabah,2024-01-01,female,noncitizen,84.5
+Sarawak,2024-01-01,both,overall,75.0
+Sarawak,2024-01-01,both,citizen,74.7
+Sarawak,2024-01-01,both,bumi,73.8
+Sarawak,2024-01-01,both,bumi_malay,74.4
+Sarawak,2024-01-01,both,bumi_other,73.5
+Sarawak,2024-01-01,both,chinese,77.4
+Sarawak,2024-01-01,both,indian,71.8
+Sarawak,2024-01-01,both,noncitizen,80.7
+Sarawak,2024-01-01,male,overall,72.6
+Sarawak,2024-01-01,male,citizen,72.2
+Sarawak,2024-01-01,male,bumi,71.4
+Sarawak,2024-01-01,male,bumi_malay,72.3
+Sarawak,2024-01-01,male,bumi_other,70.9
+Sarawak,2024-01-01,male,chinese,74.6
+Sarawak,2024-01-01,male,indian,68.1
+Sarawak,2024-01-01,male,noncitizen,80.3
+Sarawak,2024-01-01,female,overall,77.7
+Sarawak,2024-01-01,female,citizen,77.6
+Sarawak,2024-01-01,female,bumi,76.5
+Sarawak,2024-01-01,female,bumi_malay,76.8
+Sarawak,2024-01-01,female,bumi_other,76.3
+Sarawak,2024-01-01,female,chinese,80.8
+Sarawak,2024-01-01,female,indian,78.1
+Sarawak,2024-01-01,female,noncitizen,81.0
+Selangor,2024-01-01,both,overall,77.6
+Selangor,2024-01-01,both,citizen,77.3
+Selangor,2024-01-01,both,bumi,78.0
+Selangor,2024-01-01,both,bumi_malay,78.1
+Selangor,2024-01-01,both,bumi_other,72.4
+Selangor,2024-01-01,both,chinese,78.4
+Selangor,2024-01-01,both,indian,72.7
+Selangor,2024-01-01,both,noncitizen,80.1
+Selangor,2024-01-01,male,overall,75.7
+Selangor,2024-01-01,male,citizen,75.1
+Selangor,2024-01-01,male,bumi,76.1
+Selangor,2024-01-01,male,bumi_malay,76.2
+Selangor,2024-01-01,male,bumi_other,68.1
+Selangor,2024-01-01,male,chinese,75.9
+Selangor,2024-01-01,male,indian,69.5
+Selangor,2024-01-01,male,noncitizen,80.8
+Selangor,2024-01-01,female,overall,80.0
+Selangor,2024-01-01,female,citizen,79.9
+Selangor,2024-01-01,female,bumi,80.1
+Selangor,2024-01-01,female,bumi_malay,80.1
+Selangor,2024-01-01,female,bumi_other,75.1
+Selangor,2024-01-01,female,chinese,81.3
+Selangor,2024-01-01,female,indian,76.4
+Selangor,2024-01-01,female,noncitizen,77.1
+Terengganu,2024-01-01,both,overall,72.0
+Terengganu,2024-01-01,both,citizen,71.8
+Terengganu,2024-01-01,both,bumi,71.8
+Terengganu,2024-01-01,both,bumi_malay,71.8
+Terengganu,2024-01-01,both,bumi_other,75.0
+Terengganu,2024-01-01,both,chinese,75.3
+Terengganu,2024-01-01,both,indian,66.7
+Terengganu,2024-01-01,both,noncitizen,78.4
+Terengganu,2024-01-01,male,overall,69.7
+Terengganu,2024-01-01,male,citizen,69.3
+Terengganu,2024-01-01,male,bumi,69.3
+Terengganu,2024-01-01,male,bumi_malay,69.2
+Terengganu,2024-01-01,male,bumi_other,74.3
+Terengganu,2024-01-01,male,chinese,72.2
+Terengganu,2024-01-01,male,indian,64.7
+Terengganu,2024-01-01,male,noncitizen,77.0
+Terengganu,2024-01-01,female,overall,74.7
+Terengganu,2024-01-01,female,citizen,74.6
+Terengganu,2024-01-01,female,bumi,74.5
+Terengganu,2024-01-01,female,bumi_malay,74.5
+Terengganu,2024-01-01,female,bumi_other,75.9
+Terengganu,2024-01-01,female,chinese,79.2
+Terengganu,2024-01-01,female,indian,69.3
+Terengganu,2024-01-01,female,noncitizen,79.9
+W.P. Kuala Lumpur,2024-01-01,both,overall,76.8
+W.P. Kuala Lumpur,2024-01-01,both,citizen,76.6
+W.P. Kuala Lumpur,2024-01-01,both,bumi,77.4
+W.P. Kuala Lumpur,2024-01-01,both,bumi_malay,77.5
+W.P. Kuala Lumpur,2024-01-01,both,bumi_other,76.0
+W.P. Kuala Lumpur,2024-01-01,both,chinese,76.9
+W.P. Kuala Lumpur,2024-01-01,both,indian,72.8
+W.P. Kuala Lumpur,2024-01-01,both,noncitizen,76.2
+W.P. Kuala Lumpur,2024-01-01,male,overall,74.8
+W.P. Kuala Lumpur,2024-01-01,male,citizen,74.3
+W.P. Kuala Lumpur,2024-01-01,male,bumi,75.4
+W.P. Kuala Lumpur,2024-01-01,male,bumi_malay,75.5
+W.P. Kuala Lumpur,2024-01-01,male,bumi_other,73.8
+W.P. Kuala Lumpur,2024-01-01,male,chinese,74.6
+W.P. Kuala Lumpur,2024-01-01,male,indian,70.1
+W.P. Kuala Lumpur,2024-01-01,male,noncitizen,73.8
+W.P. Kuala Lumpur,2024-01-01,female,overall,79.2
+W.P. Kuala Lumpur,2024-01-01,female,citizen,79.1
+W.P. Kuala Lumpur,2024-01-01,female,bumi,79.5
+W.P. Kuala Lumpur,2024-01-01,female,bumi_malay,79.6
+W.P. Kuala Lumpur,2024-01-01,female,bumi_other,78.1
+W.P. Kuala Lumpur,2024-01-01,female,chinese,79.6
+W.P. Kuala Lumpur,2024-01-01,female,indian,76.0
+W.P. Kuala Lumpur,2024-01-01,female,noncitizen,79.7
+W.P. Labuan,2024-01-01,both,overall,76.4
+W.P. Labuan,2024-01-01,both,citizen,76.3
+W.P. Labuan,2024-01-01,both,bumi,76.1
+W.P. Labuan,2024-01-01,both,bumi_malay,69.8
+W.P. Labuan,2024-01-01,both,bumi_other,79.6
+W.P. Labuan,2024-01-01,both,chinese,76.4
+W.P. Labuan,2024-01-01,both,indian,75.7
+W.P. Labuan,2024-01-01,both,noncitizen,76.7
+W.P. Labuan,2024-01-01,male,overall,74.4
+W.P. Labuan,2024-01-01,male,citizen,74.1
+W.P. Labuan,2024-01-01,male,bumi,74.2
+W.P. Labuan,2024-01-01,male,bumi_malay,67.6
+W.P. Labuan,2024-01-01,male,bumi_other,78.1
+W.P. Labuan,2024-01-01,male,chinese,74.8
+W.P. Labuan,2024-01-01,male,indian,74.0
+W.P. Labuan,2024-01-01,male,noncitizen,75.8
+W.P. Labuan,2024-01-01,female,overall,78.8
+W.P. Labuan,2024-01-01,female,citizen,78.9
+W.P. Labuan,2024-01-01,female,bumi,78.4
+W.P. Labuan,2024-01-01,female,bumi_malay,72.2
+W.P. Labuan,2024-01-01,female,bumi_other,81.5
+W.P. Labuan,2024-01-01,female,chinese,78.3
+W.P. Labuan,2024-01-01,female,indian,85.4
+W.P. Labuan,2024-01-01,female,noncitizen,77.3
+W.P. Putrajaya,2024-01-01,both,overall,73.5
+W.P. Putrajaya,2024-01-01,both,citizen,73.3
+W.P. Putrajaya,2024-01-01,both,bumi,73.3
+W.P. Putrajaya,2024-01-01,both,bumi_malay,73.3
+W.P. Putrajaya,2024-01-01,both,bumi_other,71.1
+W.P. Putrajaya,2024-01-01,both,chinese,65.3
+W.P. Putrajaya,2024-01-01,both,indian,74.5
+W.P. Putrajaya,2024-01-01,male,overall,71.9
+W.P. Putrajaya,2024-01-01,male,citizen,71.6
+W.P. Putrajaya,2024-01-01,male,bumi,71.7
+W.P. Putrajaya,2024-01-01,male,bumi_malay,71.8
+W.P. Putrajaya,2024-01-01,male,bumi_other,66.6
+W.P. Putrajaya,2024-01-01,male,chinese,55.2
+W.P. Putrajaya,2024-01-01,male,indian,78.2
+W.P. Putrajaya,2024-01-01,female,overall,75.0
+W.P. Putrajaya,2024-01-01,female,citizen,74.8
+W.P. Putrajaya,2024-01-01,female,bumi,74.8
+W.P. Putrajaya,2024-01-01,female,bumi_malay,74.7
+W.P. Putrajaya,2024-01-01,female,bumi_other,84.0
+W.P. Putrajaya,2024-01-01,female,chinese,77.5
+W.P. Putrajaya,2024-01-01,female,indian,71.8
+Johor,2025-01-01,both,overall,74.6
+Johor,2025-01-01,both,citizen,74.1
+Johor,2025-01-01,both,bumi,73.4
+Johor,2025-01-01,both,bumi_malay,73.4
+Johor,2025-01-01,both,bumi_other,73.8
+Johor,2025-01-01,both,chinese,76.2
+Johor,2025-01-01,both,indian,70.1
+Johor,2025-01-01,both,noncitizen,82.9
+Johor,2025-01-01,male,overall,72.5
+Johor,2025-01-01,male,citizen,71.5
+Johor,2025-01-01,male,bumi,71.0
+Johor,2025-01-01,male,bumi_malay,71.0
+Johor,2025-01-01,male,bumi_other,72.0
+Johor,2025-01-01,male,chinese,73.5
+Johor,2025-01-01,male,indian,66.5
+Johor,2025-01-01,male,noncitizen,82.8
+Johor,2025-01-01,female,overall,77.2
+Johor,2025-01-01,female,citizen,77.0
+Johor,2025-01-01,female,bumi,76.0
+Johor,2025-01-01,female,bumi_malay,76.1
+Johor,2025-01-01,female,bumi_other,75.3
+Johor,2025-01-01,female,chinese,79.4
+Johor,2025-01-01,female,indian,74.1
+Johor,2025-01-01,female,noncitizen,82.5
+Kedah,2025-01-01,both,overall,72.9
+Kedah,2025-01-01,both,citizen,72.6
+Kedah,2025-01-01,both,bumi,72.3
+Kedah,2025-01-01,both,bumi_malay,72.3
+Kedah,2025-01-01,both,bumi_other,72.2
+Kedah,2025-01-01,both,chinese,75.5
+Kedah,2025-01-01,both,indian,70.2
+Kedah,2025-01-01,both,noncitizen,84.0
+Kedah,2025-01-01,male,overall,70.2
+Kedah,2025-01-01,male,citizen,69.8
+Kedah,2025-01-01,male,bumi,69.7
+Kedah,2025-01-01,male,bumi_malay,69.6
+Kedah,2025-01-01,male,bumi_other,64.7
+Kedah,2025-01-01,male,chinese,72.4
+Kedah,2025-01-01,male,indian,65.8
+Kedah,2025-01-01,male,noncitizen,83.7
+Kedah,2025-01-01,female,overall,75.8
+Kedah,2025-01-01,female,citizen,75.7
+Kedah,2025-01-01,female,bumi,75.2
+Kedah,2025-01-01,female,bumi_malay,75.2
+Kedah,2025-01-01,female,bumi_other,77.4
+Kedah,2025-01-01,female,chinese,79.0
+Kedah,2025-01-01,female,indian,74.7
+Kedah,2025-01-01,female,noncitizen,84.3
+Kelantan,2025-01-01,both,overall,73.5
+Kelantan,2025-01-01,both,citizen,73.3
+Kelantan,2025-01-01,both,bumi,73.2
+Kelantan,2025-01-01,both,bumi_malay,73.2
+Kelantan,2025-01-01,both,bumi_other,68.3
+Kelantan,2025-01-01,both,chinese,76.6
+Kelantan,2025-01-01,both,indian,71.9
+Kelantan,2025-01-01,both,noncitizen,81.3
+Kelantan,2025-01-01,male,overall,70.8
+Kelantan,2025-01-01,male,citizen,70.6
+Kelantan,2025-01-01,male,bumi,70.5
+Kelantan,2025-01-01,male,bumi_malay,70.5
+Kelantan,2025-01-01,male,bumi_other,67.7
+Kelantan,2025-01-01,male,chinese,74.0
+Kelantan,2025-01-01,male,indian,67.4
+Kelantan,2025-01-01,male,noncitizen,78.9
+Kelantan,2025-01-01,female,overall,76.3
+Kelantan,2025-01-01,female,citizen,76.2
+Kelantan,2025-01-01,female,bumi,76.1
+Kelantan,2025-01-01,female,bumi_malay,76.1
+Kelantan,2025-01-01,female,bumi_other,69.1
+Kelantan,2025-01-01,female,chinese,79.8
+Kelantan,2025-01-01,female,indian,76.4
+Kelantan,2025-01-01,female,noncitizen,83.1
+Melaka,2025-01-01,both,overall,74.5
+Melaka,2025-01-01,both,citizen,74.2
+Melaka,2025-01-01,both,bumi,73.4
+Melaka,2025-01-01,both,bumi_malay,73.4
+Melaka,2025-01-01,both,bumi_other,75.8
+Melaka,2025-01-01,both,chinese,77.3
+Melaka,2025-01-01,both,indian,70.8
+Melaka,2025-01-01,both,noncitizen,74.5
+Melaka,2025-01-01,male,overall,71.9
+Melaka,2025-01-01,male,citizen,71.4
+Melaka,2025-01-01,male,bumi,70.8
+Melaka,2025-01-01,male,bumi_malay,70.8
+Melaka,2025-01-01,male,bumi_other,73.4
+Melaka,2025-01-01,male,chinese,74.4
+Melaka,2025-01-01,male,indian,66.9
+Melaka,2025-01-01,male,noncitizen,73.5
+Melaka,2025-01-01,female,overall,77.4
+Melaka,2025-01-01,female,citizen,77.3
+Melaka,2025-01-01,female,bumi,76.1
+Melaka,2025-01-01,female,bumi_malay,76.1
+Melaka,2025-01-01,female,bumi_other,78.3
+Melaka,2025-01-01,female,chinese,80.7
+Melaka,2025-01-01,female,indian,74.9
+Melaka,2025-01-01,female,noncitizen,75.7
+Negeri Sembilan,2025-01-01,both,overall,73.9
+Negeri Sembilan,2025-01-01,both,citizen,73.6
+Negeri Sembilan,2025-01-01,both,bumi,73.1
+Negeri Sembilan,2025-01-01,both,bumi_malay,73.2
+Negeri Sembilan,2025-01-01,both,bumi_other,70.2
+Negeri Sembilan,2025-01-01,both,chinese,77.2
+Negeri Sembilan,2025-01-01,both,indian,70.7
+Negeri Sembilan,2025-01-01,both,noncitizen,79.0
+Negeri Sembilan,2025-01-01,male,overall,71.3
+Negeri Sembilan,2025-01-01,male,citizen,70.8
+Negeri Sembilan,2025-01-01,male,bumi,70.6
+Negeri Sembilan,2025-01-01,male,bumi_malay,70.7
+Negeri Sembilan,2025-01-01,male,bumi_other,68.4
+Negeri Sembilan,2025-01-01,male,chinese,74.2
+Negeri Sembilan,2025-01-01,male,indian,67.1
+Negeri Sembilan,2025-01-01,male,noncitizen,78.6
+Negeri Sembilan,2025-01-01,female,overall,76.9
+Negeri Sembilan,2025-01-01,female,citizen,76.8
+Negeri Sembilan,2025-01-01,female,bumi,75.8
+Negeri Sembilan,2025-01-01,female,bumi_malay,76.0
+Negeri Sembilan,2025-01-01,female,bumi_other,71.9
+Negeri Sembilan,2025-01-01,female,chinese,80.7
+Negeri Sembilan,2025-01-01,female,indian,74.7
+Negeri Sembilan,2025-01-01,female,noncitizen,79.6
+Pahang,2025-01-01,both,overall,73.3
+Pahang,2025-01-01,both,citizen,73.1
+Pahang,2025-01-01,both,bumi,72.9
+Pahang,2025-01-01,both,bumi_malay,73.2
+Pahang,2025-01-01,both,bumi_other,70.3
+Pahang,2025-01-01,both,chinese,74.8
+Pahang,2025-01-01,both,indian,71.2
+Pahang,2025-01-01,both,noncitizen,66.9
+Pahang,2025-01-01,male,overall,71.0
+Pahang,2025-01-01,male,citizen,70.6
+Pahang,2025-01-01,male,bumi,70.5
+Pahang,2025-01-01,male,bumi_malay,70.7
+Pahang,2025-01-01,male,bumi_other,68.2
+Pahang,2025-01-01,male,chinese,71.7
+Pahang,2025-01-01,male,indian,68.0
+Pahang,2025-01-01,male,noncitizen,65.7
+Pahang,2025-01-01,female,overall,76.1
+Pahang,2025-01-01,female,citizen,76.1
+Pahang,2025-01-01,female,bumi,75.7
+Pahang,2025-01-01,female,bumi_malay,75.9
+Pahang,2025-01-01,female,bumi_other,72.6
+Pahang,2025-01-01,female,chinese,78.7
+Pahang,2025-01-01,female,indian,75.0
+Pahang,2025-01-01,female,noncitizen,69.6
+Perak,2025-01-01,both,overall,73.8
+Perak,2025-01-01,both,citizen,73.6
+Perak,2025-01-01,both,bumi,72.3
+Perak,2025-01-01,both,bumi_malay,72.4
+Perak,2025-01-01,both,bumi_other,72.1
+Perak,2025-01-01,both,chinese,76.9
+Perak,2025-01-01,both,indian,71.1
+Perak,2025-01-01,both,noncitizen,75.3
+Perak,2025-01-01,male,overall,71.1
+Perak,2025-01-01,male,citizen,70.5
+Perak,2025-01-01,male,bumi,69.6
+Perak,2025-01-01,male,bumi_malay,69.6
+Perak,2025-01-01,male,bumi_other,69.6
+Perak,2025-01-01,male,chinese,73.7
+Perak,2025-01-01,male,indian,66.8
+Perak,2025-01-01,male,noncitizen,74.1
+Perak,2025-01-01,female,overall,77.0
+Perak,2025-01-01,female,citizen,77.0
+Perak,2025-01-01,female,bumi,75.3
+Perak,2025-01-01,female,bumi_malay,75.3
+Perak,2025-01-01,female,bumi_other,74.8
+Perak,2025-01-01,female,chinese,80.7
+Perak,2025-01-01,female,indian,75.6
+Perak,2025-01-01,female,noncitizen,76.4
+Perlis,2025-01-01,both,overall,73.3
+Perlis,2025-01-01,both,citizen,73.1
+Perlis,2025-01-01,both,bumi,72.8
+Perlis,2025-01-01,both,bumi_malay,72.7
+Perlis,2025-01-01,both,chinese,76.0
+Perlis,2025-01-01,both,indian,73.9
+Perlis,2025-01-01,both,noncitizen,76.0
+Perlis,2025-01-01,male,overall,70.4
+Perlis,2025-01-01,male,citizen,70.1
+Perlis,2025-01-01,male,bumi,69.7
+Perlis,2025-01-01,male,bumi_malay,69.7
+Perlis,2025-01-01,male,chinese,73.8
+Perlis,2025-01-01,male,indian,72.6
+Perlis,2025-01-01,male,noncitizen,71.5
+Perlis,2025-01-01,female,overall,76.4
+Perlis,2025-01-01,female,citizen,76.2
+Perlis,2025-01-01,female,bumi,76.0
+Perlis,2025-01-01,female,bumi_malay,75.9
+Perlis,2025-01-01,female,chinese,78.4
+Perlis,2025-01-01,female,indian,74.7
+Perlis,2025-01-01,female,noncitizen,80.3
+Pulau Pinang,2025-01-01,both,overall,75.1
+Pulau Pinang,2025-01-01,both,citizen,74.9
+Pulau Pinang,2025-01-01,both,bumi,72.9
+Pulau Pinang,2025-01-01,both,bumi_malay,72.8
+Pulau Pinang,2025-01-01,both,bumi_other,80.0
+Pulau Pinang,2025-01-01,both,chinese,77.6
+Pulau Pinang,2025-01-01,both,indian,69.7
+Pulau Pinang,2025-01-01,both,noncitizen,80.2
+Pulau Pinang,2025-01-01,male,overall,72.8
+Pulau Pinang,2025-01-01,male,citizen,72.4
+Pulau Pinang,2025-01-01,male,bumi,70.8
+Pulau Pinang,2025-01-01,male,bumi_malay,70.8
+Pulau Pinang,2025-01-01,male,bumi_other,79.7
+Pulau Pinang,2025-01-01,male,chinese,75.0
+Pulau Pinang,2025-01-01,male,indian,66.5
+Pulau Pinang,2025-01-01,male,noncitizen,80.2
+Pulau Pinang,2025-01-01,female,overall,77.8
+Pulau Pinang,2025-01-01,female,citizen,77.6
+Pulau Pinang,2025-01-01,female,bumi,75.1
+Pulau Pinang,2025-01-01,female,bumi_malay,75.0
+Pulau Pinang,2025-01-01,female,bumi_other,80.9
+Pulau Pinang,2025-01-01,female,chinese,80.6
+Pulau Pinang,2025-01-01,female,indian,73.3
+Pulau Pinang,2025-01-01,female,noncitizen,80.3
+Sabah,2025-01-01,both,overall,75.0
+Sabah,2025-01-01,both,citizen,73.4
+Sabah,2025-01-01,both,bumi,73.7
+Sabah,2025-01-01,both,bumi_malay,68.0
+Sabah,2025-01-01,both,bumi_other,74.6
+Sabah,2025-01-01,both,chinese,72.7
+Sabah,2025-01-01,both,indian,68.2
+Sabah,2025-01-01,both,noncitizen,84.0
+Sabah,2025-01-01,male,overall,72.9
+Sabah,2025-01-01,male,citizen,71.0
+Sabah,2025-01-01,male,bumi,71.4
+Sabah,2025-01-01,male,bumi_malay,65.9
+Sabah,2025-01-01,male,bumi_other,72.4
+Sabah,2025-01-01,male,chinese,70.1
+Sabah,2025-01-01,male,indian,63.6
+Sabah,2025-01-01,male,noncitizen,83.3
+Sabah,2025-01-01,female,overall,77.5
+Sabah,2025-01-01,female,citizen,76.1
+Sabah,2025-01-01,female,bumi,76.3
+Sabah,2025-01-01,female,bumi_malay,70.1
+Sabah,2025-01-01,female,bumi_other,77.0
+Sabah,2025-01-01,female,chinese,76.2
+Sabah,2025-01-01,female,indian,78.0
+Sabah,2025-01-01,female,noncitizen,84.8
+Sarawak,2025-01-01,both,overall,75.3
+Sarawak,2025-01-01,both,citizen,75.0
+Sarawak,2025-01-01,both,bumi,74.1
+Sarawak,2025-01-01,both,bumi_malay,74.6
+Sarawak,2025-01-01,both,bumi_other,73.8
+Sarawak,2025-01-01,both,chinese,77.7
+Sarawak,2025-01-01,both,indian,73.1
+Sarawak,2025-01-01,both,noncitizen,79.8
+Sarawak,2025-01-01,male,overall,72.9
+Sarawak,2025-01-01,male,citizen,72.5
+Sarawak,2025-01-01,male,bumi,71.6
+Sarawak,2025-01-01,male,bumi_malay,72.2
+Sarawak,2025-01-01,male,bumi_other,71.3
+Sarawak,2025-01-01,male,chinese,75.1
+Sarawak,2025-01-01,male,indian,69.5
+Sarawak,2025-01-01,male,noncitizen,79.7
+Sarawak,2025-01-01,female,overall,78.0
+Sarawak,2025-01-01,female,citizen,77.9
+Sarawak,2025-01-01,female,bumi,76.8
+Sarawak,2025-01-01,female,bumi_malay,77.3
+Sarawak,2025-01-01,female,bumi_other,76.6
+Sarawak,2025-01-01,female,chinese,80.8
+Sarawak,2025-01-01,female,indian,79.9
+Sarawak,2025-01-01,female,noncitizen,79.9
+Selangor,2025-01-01,both,overall,77.9
+Selangor,2025-01-01,both,citizen,77.6
+Selangor,2025-01-01,both,bumi,78.1
+Selangor,2025-01-01,both,bumi_malay,78.2
+Selangor,2025-01-01,both,bumi_other,71.7
+Selangor,2025-01-01,both,chinese,78.7
+Selangor,2025-01-01,both,indian,73.1
+Selangor,2025-01-01,both,noncitizen,80.3
+Selangor,2025-01-01,male,overall,76.0
+Selangor,2025-01-01,male,citizen,75.4
+Selangor,2025-01-01,male,bumi,76.3
+Selangor,2025-01-01,male,bumi_malay,76.4
+Selangor,2025-01-01,male,bumi_other,66.1
+Selangor,2025-01-01,male,chinese,76.3
+Selangor,2025-01-01,male,indian,70.1
+Selangor,2025-01-01,male,noncitizen,80.9
+Selangor,2025-01-01,female,overall,80.2
+Selangor,2025-01-01,female,citizen,80.1
+Selangor,2025-01-01,female,bumi,80.2
+Selangor,2025-01-01,female,bumi_malay,80.3
+Selangor,2025-01-01,female,bumi_other,76.3
+Selangor,2025-01-01,female,chinese,81.5
+Selangor,2025-01-01,female,indian,76.5
+Selangor,2025-01-01,female,noncitizen,77.3
+Terengganu,2025-01-01,both,overall,72.6
+Terengganu,2025-01-01,both,citizen,72.4
+Terengganu,2025-01-01,both,bumi,72.3
+Terengganu,2025-01-01,both,bumi_malay,72.3
+Terengganu,2025-01-01,both,bumi_other,73.5
+Terengganu,2025-01-01,both,chinese,76.3
+Terengganu,2025-01-01,both,indian,68.9
+Terengganu,2025-01-01,both,noncitizen,79.4
+Terengganu,2025-01-01,male,overall,70.2
+Terengganu,2025-01-01,male,citizen,69.9
+Terengganu,2025-01-01,male,bumi,69.8
+Terengganu,2025-01-01,male,bumi_malay,69.8
+Terengganu,2025-01-01,male,bumi_other,70.9
+Terengganu,2025-01-01,male,chinese,73.8
+Terengganu,2025-01-01,male,indian,65.0
+Terengganu,2025-01-01,male,noncitizen,77.0
+Terengganu,2025-01-01,female,overall,75.2
+Terengganu,2025-01-01,female,citizen,75.2
+Terengganu,2025-01-01,female,bumi,75.1
+Terengganu,2025-01-01,female,bumi_malay,75.1
+Terengganu,2025-01-01,female,bumi_other,76.7
+Terengganu,2025-01-01,female,chinese,79.4
+Terengganu,2025-01-01,female,indian,74.7
+Terengganu,2025-01-01,female,noncitizen,82.6
+W.P. Kuala Lumpur,2025-01-01,both,overall,77.2
+W.P. Kuala Lumpur,2025-01-01,both,citizen,76.9
+W.P. Kuala Lumpur,2025-01-01,both,bumi,77.5
+W.P. Kuala Lumpur,2025-01-01,both,bumi_malay,77.6
+W.P. Kuala Lumpur,2025-01-01,both,bumi_other,75.0
+W.P. Kuala Lumpur,2025-01-01,both,chinese,77.3
+W.P. Kuala Lumpur,2025-01-01,both,indian,73.6
+W.P. Kuala Lumpur,2025-01-01,both,noncitizen,76.3
+W.P. Kuala Lumpur,2025-01-01,male,overall,75.0
+W.P. Kuala Lumpur,2025-01-01,male,citizen,74.6
+W.P. Kuala Lumpur,2025-01-01,male,bumi,75.6
+W.P. Kuala Lumpur,2025-01-01,male,bumi_malay,75.6
+W.P. Kuala Lumpur,2025-01-01,male,bumi_other,73.4
+W.P. Kuala Lumpur,2025-01-01,male,chinese,74.8
+W.P. Kuala Lumpur,2025-01-01,male,indian,70.7
+W.P. Kuala Lumpur,2025-01-01,male,noncitizen,74.0
+W.P. Kuala Lumpur,2025-01-01,female,overall,79.6
+W.P. Kuala Lumpur,2025-01-01,female,citizen,79.5
+W.P. Kuala Lumpur,2025-01-01,female,bumi,79.6
+W.P. Kuala Lumpur,2025-01-01,female,bumi_malay,79.6
+W.P. Kuala Lumpur,2025-01-01,female,bumi_other,77.0
+W.P. Kuala Lumpur,2025-01-01,female,chinese,80.1
+W.P. Kuala Lumpur,2025-01-01,female,indian,77.0
+W.P. Kuala Lumpur,2025-01-01,female,noncitizen,79.6
+W.P. Labuan,2025-01-01,both,overall,76.6
+W.P. Labuan,2025-01-01,both,citizen,76.6
+W.P. Labuan,2025-01-01,both,bumi,76.6
+W.P. Labuan,2025-01-01,both,bumi_malay,70.6
+W.P. Labuan,2025-01-01,both,bumi_other,79.8
+W.P. Labuan,2025-01-01,both,chinese,76.9
+W.P. Labuan,2025-01-01,both,indian,75.7
+W.P. Labuan,2025-01-01,both,noncitizen,73.4
+W.P. Labuan,2025-01-01,male,overall,74.4
+W.P. Labuan,2025-01-01,male,citizen,74.2
+W.P. Labuan,2025-01-01,male,bumi,74.4
+W.P. Labuan,2025-01-01,male,bumi_malay,67.7
+W.P. Labuan,2025-01-01,male,bumi_other,78.3
+W.P. Labuan,2025-01-01,male,chinese,74.3
+W.P. Labuan,2025-01-01,male,indian,72.1
+W.P. Labuan,2025-01-01,male,noncitizen,73.2
+W.P. Labuan,2025-01-01,female,overall,79.2
+W.P. Labuan,2025-01-01,female,citizen,79.4
+W.P. Labuan,2025-01-01,female,bumi,79.1
+W.P. Labuan,2025-01-01,female,bumi_malay,74.2
+W.P. Labuan,2025-01-01,female,bumi_other,81.5
+W.P. Labuan,2025-01-01,female,chinese,78.3
+W.P. Labuan,2025-01-01,female,indian,86.8
+W.P. Labuan,2025-01-01,female,noncitizen,73.7
+W.P. Putrajaya,2025-01-01,both,overall,73.6
+W.P. Putrajaya,2025-01-01,both,citizen,73.5
+W.P. Putrajaya,2025-01-01,both,bumi,73.5
+W.P. Putrajaya,2025-01-01,both,bumi_malay,73.5
+W.P. Putrajaya,2025-01-01,both,bumi_other,76.3
+W.P. Putrajaya,2025-01-01,both,chinese,67.5
+W.P. Putrajaya,2025-01-01,both,indian,74.5
+W.P. Putrajaya,2025-01-01,male,overall,71.8
+W.P. Putrajaya,2025-01-01,male,citizen,71.6
+W.P. Putrajaya,2025-01-01,male,bumi,71.6
+W.P. Putrajaya,2025-01-01,male,bumi_malay,71.7
+W.P. Putrajaya,2025-01-01,male,bumi_other,68.5
+W.P. Putrajaya,2025-01-01,male,chinese,70.0
+W.P. Putrajaya,2025-01-01,male,indian,76.0
+W.P. Putrajaya,2025-01-01,female,overall,75.4
+W.P. Putrajaya,2025-01-01,female,citizen,75.3
+W.P. Putrajaya,2025-01-01,female,bumi,75.3
+W.P. Putrajaya,2025-01-01,female,bumi_malay,75.2
+W.P. Putrajaya,2025-01-01,female,bumi_other,84.2
+W.P. Putrajaya,2025-01-01,female,chinese,63.3
+W.P. Putrajaya,2025-01-01,female,indian,73.7
+Johor,2026-01-01,both,overall,74.9
+Johor,2026-01-01,both,citizen,74.3
+Johor,2026-01-01,both,bumi,73.6
+Johor,2026-01-01,both,bumi_malay,73.6
+Johor,2026-01-01,both,bumi_other,73.2
+Johor,2026-01-01,both,chinese,76.6
+Johor,2026-01-01,both,indian,70.2
+Johor,2026-01-01,both,noncitizen,83.1
+Johor,2026-01-01,male,overall,72.7
+Johor,2026-01-01,male,citizen,71.8
+Johor,2026-01-01,male,bumi,71.2
+Johor,2026-01-01,male,bumi_malay,71.2
+Johor,2026-01-01,male,bumi_other,71.4
+Johor,2026-01-01,male,chinese,74.0
+Johor,2026-01-01,male,indian,66.8
+Johor,2026-01-01,male,noncitizen,83.2
+Johor,2026-01-01,female,overall,77.4
+Johor,2026-01-01,female,citizen,77.2
+Johor,2026-01-01,female,bumi,76.3
+Johor,2026-01-01,female,bumi_malay,76.3
+Johor,2026-01-01,female,bumi_other,74.5
+Johor,2026-01-01,female,chinese,79.7
+Johor,2026-01-01,female,indian,74.0
+Johor,2026-01-01,female,noncitizen,81.9
+Kedah,2026-01-01,both,overall,73.0
+Kedah,2026-01-01,both,citizen,72.8
+Kedah,2026-01-01,both,bumi,72.4
+Kedah,2026-01-01,both,bumi_malay,72.4
+Kedah,2026-01-01,both,bumi_other,80.5
+Kedah,2026-01-01,both,chinese,76.1
+Kedah,2026-01-01,both,indian,70.5
+Kedah,2026-01-01,both,noncitizen,84.6
+Kedah,2026-01-01,male,overall,70.3
+Kedah,2026-01-01,male,citizen,69.8
+Kedah,2026-01-01,male,bumi,69.6
+Kedah,2026-01-01,male,bumi_malay,69.6
+Kedah,2026-01-01,male,bumi_other,85.4
+Kedah,2026-01-01,male,chinese,73.1
+Kedah,2026-01-01,male,indian,66.2
+Kedah,2026-01-01,male,noncitizen,84.0
+Kedah,2026-01-01,female,overall,76.0
+Kedah,2026-01-01,female,citizen,75.9
+Kedah,2026-01-01,female,bumi,75.4
+Kedah,2026-01-01,female,bumi_malay,75.4
+Kedah,2026-01-01,female,bumi_other,76.1
+Kedah,2026-01-01,female,chinese,79.4
+Kedah,2026-01-01,female,indian,74.9
+Kedah,2026-01-01,female,noncitizen,85.0
+Kelantan,2026-01-01,both,overall,73.6
+Kelantan,2026-01-01,both,citizen,73.5
+Kelantan,2026-01-01,both,bumi,73.3
+Kelantan,2026-01-01,both,bumi_malay,73.4
+Kelantan,2026-01-01,both,bumi_other,67.7
+Kelantan,2026-01-01,both,chinese,77.3
+Kelantan,2026-01-01,both,indian,75.1
+Kelantan,2026-01-01,both,noncitizen,80.9
+Kelantan,2026-01-01,male,overall,70.9
+Kelantan,2026-01-01,male,citizen,70.7
+Kelantan,2026-01-01,male,bumi,70.6
+Kelantan,2026-01-01,male,bumi_malay,70.6
+Kelantan,2026-01-01,male,bumi_other,65.9
+Kelantan,2026-01-01,male,chinese,74.8
+Kelantan,2026-01-01,male,indian,72.3
+Kelantan,2026-01-01,male,noncitizen,77.9
+Kelantan,2026-01-01,female,overall,76.5
+Kelantan,2026-01-01,female,citizen,76.4
+Kelantan,2026-01-01,female,bumi,76.3
+Kelantan,2026-01-01,female,bumi_malay,76.3
+Kelantan,2026-01-01,female,bumi_other,70.0
+Kelantan,2026-01-01,female,chinese,80.4
+Kelantan,2026-01-01,female,indian,78.2
+Kelantan,2026-01-01,female,noncitizen,83.5
+Melaka,2026-01-01,both,overall,74.8
+Melaka,2026-01-01,both,citizen,74.5
+Melaka,2026-01-01,both,bumi,73.6
+Melaka,2026-01-01,both,bumi_malay,73.6
+Melaka,2026-01-01,both,bumi_other,75.8
+Melaka,2026-01-01,both,chinese,77.6
+Melaka,2026-01-01,both,indian,71.2
+Melaka,2026-01-01,both,noncitizen,75.2
+Melaka,2026-01-01,male,overall,72.0
+Melaka,2026-01-01,male,citizen,71.6
+Melaka,2026-01-01,male,bumi,70.9
+Melaka,2026-01-01,male,bumi_malay,70.9
+Melaka,2026-01-01,male,bumi_other,76.0
+Melaka,2026-01-01,male,chinese,74.4
+Melaka,2026-01-01,male,indian,67.0
+Melaka,2026-01-01,male,noncitizen,75.0
+Melaka,2026-01-01,female,overall,77.8
+Melaka,2026-01-01,female,citizen,77.7
+Melaka,2026-01-01,female,bumi,76.5
+Melaka,2026-01-01,female,bumi_malay,76.5
+Melaka,2026-01-01,female,bumi_other,76.9
+Melaka,2026-01-01,female,chinese,81.3
+Melaka,2026-01-01,female,indian,75.5
+Melaka,2026-01-01,female,noncitizen,75.4
+Negeri Sembilan,2026-01-01,both,overall,74.2
+Negeri Sembilan,2026-01-01,both,citizen,74.0
+Negeri Sembilan,2026-01-01,both,bumi,73.5
+Negeri Sembilan,2026-01-01,both,bumi_malay,73.6
+Negeri Sembilan,2026-01-01,both,bumi_other,69.8
+Negeri Sembilan,2026-01-01,both,chinese,77.5
+Negeri Sembilan,2026-01-01,both,indian,70.8
+Negeri Sembilan,2026-01-01,both,noncitizen,78.6
+Negeri Sembilan,2026-01-01,male,overall,71.5
+Negeri Sembilan,2026-01-01,male,citizen,71.1
+Negeri Sembilan,2026-01-01,male,bumi,70.9
+Negeri Sembilan,2026-01-01,male,bumi_malay,71.0
+Negeri Sembilan,2026-01-01,male,bumi_other,65.7
+Negeri Sembilan,2026-01-01,male,chinese,74.7
+Negeri Sembilan,2026-01-01,male,indian,67.2
+Negeri Sembilan,2026-01-01,male,noncitizen,78.5
+Negeri Sembilan,2026-01-01,female,overall,77.3
+Negeri Sembilan,2026-01-01,female,citizen,77.2
+Negeri Sembilan,2026-01-01,female,bumi,76.4
+Negeri Sembilan,2026-01-01,female,bumi_malay,76.4
+Negeri Sembilan,2026-01-01,female,bumi_other,74.6
+Negeri Sembilan,2026-01-01,female,chinese,80.8
+Negeri Sembilan,2026-01-01,female,indian,74.9
+Negeri Sembilan,2026-01-01,female,noncitizen,79.1
+Pahang,2026-01-01,both,overall,73.6
+Pahang,2026-01-01,both,citizen,73.4
+Pahang,2026-01-01,both,bumi,73.1
+Pahang,2026-01-01,both,bumi_malay,73.3
+Pahang,2026-01-01,both,bumi_other,70.6
+Pahang,2026-01-01,both,chinese,75.5
+Pahang,2026-01-01,both,indian,71.7
+Pahang,2026-01-01,both,noncitizen,66.5
+Pahang,2026-01-01,male,overall,71.3
+Pahang,2026-01-01,male,citizen,70.8
+Pahang,2026-01-01,male,bumi,70.6
+Pahang,2026-01-01,male,bumi_malay,70.8
+Pahang,2026-01-01,male,bumi_other,68.6
+Pahang,2026-01-01,male,chinese,72.4
+Pahang,2026-01-01,male,indian,68.2
+Pahang,2026-01-01,male,noncitizen,65.4
+Pahang,2026-01-01,female,overall,76.3
+Pahang,2026-01-01,female,citizen,76.3
+Pahang,2026-01-01,female,bumi,75.9
+Pahang,2026-01-01,female,bumi_malay,76.1
+Pahang,2026-01-01,female,bumi_other,72.8
+Pahang,2026-01-01,female,chinese,79.3
+Pahang,2026-01-01,female,indian,75.7
+Pahang,2026-01-01,female,noncitizen,69.3
+Perak,2026-01-01,both,overall,74.0
+Perak,2026-01-01,both,citizen,73.7
+Perak,2026-01-01,both,bumi,72.6
+Perak,2026-01-01,both,bumi_malay,72.6
+Perak,2026-01-01,both,bumi_other,73.3
+Perak,2026-01-01,both,chinese,76.9
+Perak,2026-01-01,both,indian,71.1
+Perak,2026-01-01,both,noncitizen,76.7
+Perak,2026-01-01,male,overall,71.2
+Perak,2026-01-01,male,citizen,70.6
+Perak,2026-01-01,male,bumi,69.8
+Perak,2026-01-01,male,bumi_malay,69.8
+Perak,2026-01-01,male,bumi_other,71.4
+Perak,2026-01-01,male,chinese,73.7
+Perak,2026-01-01,male,indian,66.6
+Perak,2026-01-01,male,noncitizen,76.5
+Perak,2026-01-01,female,overall,77.2
+Perak,2026-01-01,female,citizen,77.1
+Perak,2026-01-01,female,bumi,75.5
+Perak,2026-01-01,female,bumi_malay,75.5
+Perak,2026-01-01,female,bumi_other,75.2
+Perak,2026-01-01,female,chinese,80.7
+Perak,2026-01-01,female,indian,75.8
+Perak,2026-01-01,female,noncitizen,76.7
+Perlis,2026-01-01,both,overall,73.4
+Perlis,2026-01-01,both,citizen,73.2
+Perlis,2026-01-01,both,bumi,72.8
+Perlis,2026-01-01,both,bumi_malay,72.8
+Perlis,2026-01-01,both,chinese,76.8
+Perlis,2026-01-01,both,indian,78.4
+Perlis,2026-01-01,both,noncitizen,77.6
+Perlis,2026-01-01,male,overall,70.0
+Perlis,2026-01-01,male,citizen,69.7
+Perlis,2026-01-01,male,bumi,69.3
+Perlis,2026-01-01,male,bumi_malay,69.2
+Perlis,2026-01-01,male,chinese,74.8
+Perlis,2026-01-01,male,indian,75.8
+Perlis,2026-01-01,male,noncitizen,76.2
+Perlis,2026-01-01,female,overall,77.0
+Perlis,2026-01-01,female,citizen,76.8
+Perlis,2026-01-01,female,bumi,76.5
+Perlis,2026-01-01,female,bumi_malay,76.5
+Perlis,2026-01-01,female,chinese,79.2
+Perlis,2026-01-01,female,indian,81.0
+Perlis,2026-01-01,female,noncitizen,79.3
+Pulau Pinang,2026-01-01,both,overall,75.5
+Pulau Pinang,2026-01-01,both,citizen,75.2
+Pulau Pinang,2026-01-01,both,bumi,73.1
+Pulau Pinang,2026-01-01,both,bumi_malay,73.1
+Pulau Pinang,2026-01-01,both,chinese,78.0
+Pulau Pinang,2026-01-01,both,indian,70.0
+Pulau Pinang,2026-01-01,both,noncitizen,81.0
+Pulau Pinang,2026-01-01,male,overall,73.1
+Pulau Pinang,2026-01-01,male,citizen,72.7
+Pulau Pinang,2026-01-01,male,bumi,71.1
+Pulau Pinang,2026-01-01,male,bumi_malay,71.0
+Pulau Pinang,2026-01-01,male,chinese,75.4
+Pulau Pinang,2026-01-01,male,indian,66.9
+Pulau Pinang,2026-01-01,male,noncitizen,81.8
+Pulau Pinang,2026-01-01,female,overall,78.0
+Pulau Pinang,2026-01-01,female,citizen,77.9
+Pulau Pinang,2026-01-01,female,bumi,75.3
+Pulau Pinang,2026-01-01,female,bumi_malay,75.3
+Pulau Pinang,2026-01-01,female,chinese,81.0
+Pulau Pinang,2026-01-01,female,indian,73.4
+Pulau Pinang,2026-01-01,female,noncitizen,80.3
+Sabah,2026-01-01,both,overall,75.1
+Sabah,2026-01-01,both,citizen,73.6
+Sabah,2026-01-01,both,bumi,73.9
+Sabah,2026-01-01,both,bumi_malay,68.4
+Sabah,2026-01-01,both,bumi_other,74.8
+Sabah,2026-01-01,both,chinese,72.9
+Sabah,2026-01-01,both,indian,69.3
+Sabah,2026-01-01,both,noncitizen,83.6
+Sabah,2026-01-01,male,overall,73.0
+Sabah,2026-01-01,male,citizen,71.2
+Sabah,2026-01-01,male,bumi,71.6
+Sabah,2026-01-01,male,bumi_malay,66.2
+Sabah,2026-01-01,male,bumi_other,72.5
+Sabah,2026-01-01,male,chinese,70.5
+Sabah,2026-01-01,male,indian,65.1
+Sabah,2026-01-01,male,noncitizen,82.7
+Sabah,2026-01-01,female,overall,77.6
+Sabah,2026-01-01,female,citizen,76.4
+Sabah,2026-01-01,female,bumi,76.6
+Sabah,2026-01-01,female,bumi_malay,70.6
+Sabah,2026-01-01,female,bumi_other,77.2
+Sabah,2026-01-01,female,chinese,76.2
+Sabah,2026-01-01,female,indian,78.2
+Sabah,2026-01-01,female,noncitizen,84.7
+Sarawak,2026-01-01,both,overall,75.5
+Sarawak,2026-01-01,both,citizen,75.3
+Sarawak,2026-01-01,both,bumi,74.4
+Sarawak,2026-01-01,both,bumi_malay,74.7
+Sarawak,2026-01-01,both,bumi_other,74.2
+Sarawak,2026-01-01,both,chinese,78.1
+Sarawak,2026-01-01,both,indian,74.0
+Sarawak,2026-01-01,both,noncitizen,78.6
+Sarawak,2026-01-01,male,overall,73.3
+Sarawak,2026-01-01,male,citizen,72.9
+Sarawak,2026-01-01,male,bumi,72.0
+Sarawak,2026-01-01,male,bumi_malay,72.3
+Sarawak,2026-01-01,male,bumi_other,71.8
+Sarawak,2026-01-01,male,chinese,75.6
+Sarawak,2026-01-01,male,indian,70.3
+Sarawak,2026-01-01,male,noncitizen,78.6
+Sarawak,2026-01-01,female,overall,78.1
+Sarawak,2026-01-01,female,citizen,78.0
+Sarawak,2026-01-01,female,bumi,77.0
+Sarawak,2026-01-01,female,bumi_malay,77.4
+Sarawak,2026-01-01,female,bumi_other,76.8
+Sarawak,2026-01-01,female,chinese,80.9
+Sarawak,2026-01-01,female,indian,81.5
+Sarawak,2026-01-01,female,noncitizen,78.8
+Selangor,2026-01-01,both,overall,78.2
+Selangor,2026-01-01,both,citizen,77.9
+Selangor,2026-01-01,both,bumi,78.3
+Selangor,2026-01-01,both,bumi_malay,78.4
+Selangor,2026-01-01,both,bumi_other,72.4
+Selangor,2026-01-01,both,chinese,79.2
+Selangor,2026-01-01,both,indian,73.6
+Selangor,2026-01-01,both,noncitizen,80.8
+Selangor,2026-01-01,male,overall,76.4
+Selangor,2026-01-01,male,citizen,75.8
+Selangor,2026-01-01,male,bumi,76.5
+Selangor,2026-01-01,male,bumi_malay,76.6
+Selangor,2026-01-01,male,bumi_other,65.7
+Selangor,2026-01-01,male,chinese,76.9
+Selangor,2026-01-01,male,indian,70.9
+Selangor,2026-01-01,male,noncitizen,81.3
+Selangor,2026-01-01,female,overall,80.4
+Selangor,2026-01-01,female,citizen,80.2
+Selangor,2026-01-01,female,bumi,80.3
+Selangor,2026-01-01,female,bumi_malay,80.4
+Selangor,2026-01-01,female,bumi_other,77.6
+Selangor,2026-01-01,female,chinese,81.8
+Selangor,2026-01-01,female,indian,76.6
+Selangor,2026-01-01,female,noncitizen,77.6
+Terengganu,2026-01-01,both,overall,72.8
+Terengganu,2026-01-01,both,citizen,72.7
+Terengganu,2026-01-01,both,bumi,72.6
+Terengganu,2026-01-01,both,bumi_malay,72.6
+Terengganu,2026-01-01,both,bumi_other,73.2
+Terengganu,2026-01-01,both,chinese,76.5
+Terengganu,2026-01-01,both,indian,68.9
+Terengganu,2026-01-01,both,noncitizen,80.2
+Terengganu,2026-01-01,male,overall,70.3
+Terengganu,2026-01-01,male,citizen,70.0
+Terengganu,2026-01-01,male,bumi,69.9
+Terengganu,2026-01-01,male,bumi_malay,69.9
+Terengganu,2026-01-01,male,bumi_other,69.0
+Terengganu,2026-01-01,male,chinese,73.8
+Terengganu,2026-01-01,male,indian,63.5
+Terengganu,2026-01-01,male,noncitizen,77.9
+Terengganu,2026-01-01,female,overall,75.7
+Terengganu,2026-01-01,female,citizen,75.6
+Terengganu,2026-01-01,female,bumi,75.5
+Terengganu,2026-01-01,female,bumi_malay,75.5
+Terengganu,2026-01-01,female,bumi_other,78.2
+Terengganu,2026-01-01,female,chinese,79.8
+Terengganu,2026-01-01,female,indian,78.8
+Terengganu,2026-01-01,female,noncitizen,83.2
+W.P. Kuala Lumpur,2026-01-01,both,overall,77.3
+W.P. Kuala Lumpur,2026-01-01,both,citizen,77.1
+W.P. Kuala Lumpur,2026-01-01,both,bumi,77.5
+W.P. Kuala Lumpur,2026-01-01,both,bumi_malay,77.6
+W.P. Kuala Lumpur,2026-01-01,both,bumi_other,74.1
+W.P. Kuala Lumpur,2026-01-01,both,chinese,77.4
+W.P. Kuala Lumpur,2026-01-01,both,indian,74.4
+W.P. Kuala Lumpur,2026-01-01,both,noncitizen,74.6
+W.P. Kuala Lumpur,2026-01-01,male,overall,75.1
+W.P. Kuala Lumpur,2026-01-01,male,citizen,74.6
+W.P. Kuala Lumpur,2026-01-01,male,bumi,75.6
+W.P. Kuala Lumpur,2026-01-01,male,bumi_malay,75.7
+W.P. Kuala Lumpur,2026-01-01,male,bumi_other,71.9
+W.P. Kuala Lumpur,2026-01-01,male,chinese,74.7
+W.P. Kuala Lumpur,2026-01-01,male,indian,71.3
+W.P. Kuala Lumpur,2026-01-01,male,noncitizen,72.6
+W.P. Kuala Lumpur,2026-01-01,female,overall,79.9
+W.P. Kuala Lumpur,2026-01-01,female,citizen,79.8
+W.P. Kuala Lumpur,2026-01-01,female,bumi,79.6
+W.P. Kuala Lumpur,2026-01-01,female,bumi_malay,79.7
+W.P. Kuala Lumpur,2026-01-01,female,bumi_other,76.5
+W.P. Kuala Lumpur,2026-01-01,female,chinese,80.5
+W.P. Kuala Lumpur,2026-01-01,female,indian,77.9
+W.P. Kuala Lumpur,2026-01-01,female,noncitizen,77.6
+W.P. Labuan,2026-01-01,both,overall,77.0
+W.P. Labuan,2026-01-01,both,citizen,77.1
+W.P. Labuan,2026-01-01,both,bumi,77.2
+W.P. Labuan,2026-01-01,both,bumi_malay,71.3
+W.P. Labuan,2026-01-01,both,bumi_other,80.5
+W.P. Labuan,2026-01-01,both,chinese,78.3
+W.P. Labuan,2026-01-01,both,indian,71.3
+W.P. Labuan,2026-01-01,both,noncitizen,71.4
+W.P. Labuan,2026-01-01,male,overall,75.1
+W.P. Labuan,2026-01-01,male,citizen,75.0
+W.P. Labuan,2026-01-01,male,bumi,75.4
+W.P. Labuan,2026-01-01,male,bumi_malay,68.7
+W.P. Labuan,2026-01-01,male,bumi_other,79.4
+W.P. Labuan,2026-01-01,male,chinese,73.9
+W.P. Labuan,2026-01-01,male,indian,64.6
+W.P. Labuan,2026-01-01,male,noncitizen,71.5
+W.P. Labuan,2026-01-01,female,overall,79.3
+W.P. Labuan,2026-01-01,female,citizen,79.5
+W.P. Labuan,2026-01-01,female,bumi,79.2
+W.P. Labuan,2026-01-01,female,bumi_malay,74.5
+W.P. Labuan,2026-01-01,female,bumi_other,81.7
+W.P. Labuan,2026-01-01,female,chinese,82.8
+W.P. Labuan,2026-01-01,female,indian,80.8
+W.P. Labuan,2026-01-01,female,noncitizen,71.2
+W.P. Putrajaya,2026-01-01,both,overall,74.6
+W.P. Putrajaya,2026-01-01,both,citizen,74.6
+W.P. Putrajaya,2026-01-01,both,bumi,74.7
+W.P. Putrajaya,2026-01-01,both,bumi_malay,74.6
+W.P. Putrajaya,2026-01-01,both,indian,71.2
+W.P. Putrajaya,2026-01-01,male,overall,72.5
+W.P. Putrajaya,2026-01-01,male,citizen,72.5
+W.P. Putrajaya,2026-01-01,male,bumi,72.7
+W.P. Putrajaya,2026-01-01,male,bumi_malay,72.6
+W.P. Putrajaya,2026-01-01,male,indian,68.7
+W.P. Putrajaya,2026-01-01,female,overall,76.6
+W.P. Putrajaya,2026-01-01,female,citizen,76.6
+W.P. Putrajaya,2026-01-01,female,bumi,76.6
+W.P. Putrajaya,2026-01-01,female,bumi_malay,76.5
+W.P. Putrajaya,2026-01-01,female,indian,74.0

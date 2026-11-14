@@ -1,17 +1,6 @@
-
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-
-# ==========================================
-# PAGE CONFIGURATION
-# ==========================================
-
-st.set_page_config(
-    page_title="Demographic and Socioeconomic Analysis",
-    page_icon="📊",
-    layout="wide"
-)
 
 # ==========================================
 # LIGHT THEME
@@ -46,13 +35,8 @@ st.markdown("""
 # ==========================================
 
 BIRTH_URL = "https://storage.dosm.gov.my/demography/birth.parquet"
-
 WAGES_URL = "https://storage.dosm.gov.my/labour/wages_ethnicity.parquet"
-
-LIFE_URL = (
-    "https://storage.dosm.gov.my/demography/"
-    "life_expectancy_state_ethnic.parquet"
-)
+LIFE_URL = "https://dosm.gov.my"
 
 # ==========================================
 # LOAD DATA
@@ -60,7 +44,6 @@ LIFE_URL = (
 
 @st.cache_data
 def load_data():
-
     df_birth = pd.read_parquet(BIRTH_URL)
     df_wages = pd.read_parquet(WAGES_URL)
     df_life = pd.read_parquet(LIFE_URL)
@@ -73,7 +56,6 @@ def load_data():
 
 try:
     df_birth_raw, df_wages_raw, df_life_raw = load_data()
-
 except Exception as e:
     st.error(f"Unable to load datasets: {e}")
     st.stop()
@@ -86,10 +68,8 @@ df_b = df_birth_raw.copy()
 
 if "state" in df_b.columns:
     df_b = df_b[df_b["state"] == "Malaysia"]
-
 if "sex" in df_b.columns:
     df_b = df_b[df_b["sex"] == "both"]
-
 if "ethnicity" in df_b.columns:
     df_b = df_b[df_b["ethnicity"] == "overall"]
 
@@ -130,6 +110,11 @@ df_w_nat = (
 
 df_l = df_life_raw.copy()
 
+if "state" in df_l.columns:
+    df_l = df_l[df_l["state"] == "Malaysia"]
+if "age" in df_l.columns:
+    df_l = df_l[df_l["age"] == 0]
+
 df_l = df_l[
     (df_l["sex"] == "both") &
     (df_l["ethnicity"] == "overall")
@@ -138,9 +123,8 @@ df_l = df_l[
 df_l["year"] = df_l["date"].dt.year
 
 df_l_nat = (
-    df_l.groupby("year", as_index=False)
-    ["life_expectancy"].mean()
-    .reset_index()
+    df_l.groupby("year", as_index=False)["life_expectancy"]
+    .mean()
 )
 
 # ==========================================
@@ -201,9 +185,7 @@ st.info(
 
 st.sidebar.title("Dashboard Filters")
 
-available_years = sorted(
-    df_demographics["year"].unique()
-)
+available_years = sorted(df_demographics["year"].unique())
 
 selected_years = st.sidebar.multiselect(
     "Select Years",
@@ -281,7 +263,6 @@ indicators = indicators.rename(
 )
 
 # Calculate Pearson Correlation
-
 corr_matrix = indicators.corr(method="pearson")
 
 # ==========================================

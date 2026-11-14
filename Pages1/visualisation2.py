@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -7,7 +8,7 @@ import plotly.express as px
 # ==========================================
 
 st.set_page_config(
-    page_title="Live Birth Trends in Malaysia",
+    page_title="Life Expectancy and Income Analysis",
     page_icon="📊",
     layout="wide"
 )
@@ -41,32 +42,91 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ==========================================
-# LOAD DATASET
+# DATASET URLS
 # ==========================================
 
-BIRTH_URL = "https://storage.dosm.gov.my/demography/birth.parquet"
+LIFE_URL = (
+    "https://storage.dosm.gov.my/demography/"
+    "life_expectancy.parquet"
+)
+
+WAGES_URL = (
+    "https://storage.dosm.gov.my/labour/"
+    "wages_ethnicity.parquet"
+)
+
+# ==========================================
+# LOAD DATA
+# ==========================================
 
 @st.cache_data
 def load_data():
-    df = pd.read_parquet(BIRTH_URL)
-    df["date"] = pd.to_datetime(df["date"])
-    return df
+    df_life = pd.read_parquet(LIFE_URL)
+    df_wages = pd.read_parquet(WAGES_URL)
+
+    return df_life, df_wages
 
 try:
-    df_birth = load_data()
+    df_life, df_wages = load_data()
 except Exception as e:
-    st.error(f"Unable to load dataset: {e}")
+    st.error(f"Unable to load datasets: {e}")
+    st.stop()
+
+# ==========================================
+# CLEAN DATA
+# ==========================================
+
+df_life_clean = df_life[
+    (df_life["sex"].isin(["male", "female"])) &
+    (~df_life["ethnicity"].isin(["overall", "citizen"]))
+].copy()
+
+df_wages_clean = df_wages[
+    (df_wages["sex"].isin(["male", "female"])) &
+    (~df_wages["ethnicity"].isin(["overall", "citizen"]))
+].copy()
+
+# ==========================================
+# GROUP DATA
+# ==========================================
+
+df_life_grouped = (
+    df_life_clean
+    .groupby(["ethnicity", "sex"], as_index=False)
+    ["life_expectancy"].mean()
+)
+
+df_wages_grouped = (
+    df_wages_clean
+    .groupby(["ethnicity", "sex"], as_index=False)
+    ["wages_median"].mean()
+)
+
+# ==========================================
+# MERGE DATASETS
+# ==========================================
+
+df_combined = pd.merge(
+    df_life_grouped,
+    df_wages_grouped,
+    on=["ethnicity", "sex"],
+    how="inner"
+)
+
+if df_combined.empty:
+    st.warning("No matching data found.")
     st.stop()
 
 # ==========================================
 # DASHBOARD HEADER
 # ==========================================
 
-st.title("Malaysia Live Birth Analysis")
+st.title("Life Expectancy and Income Analysis")
 
 st.markdown(
     '<p class="subtitle">'
-    'Exploring live birth trends in Malaysia from 2000 to 2025.'
+    'Comparing life expectancy and median monthly wages '
+    'among different ethnic groups and genders in Malaysia.'
     '</p>',
     unsafe_allow_html=True
 )
@@ -74,119 +134,122 @@ st.markdown(
 st.divider()
 
 # ==========================================
-# RESEARCH OBJECTIVE 1
+# RESEARCH OBJECTIVE 2
 # ==========================================
 
-st.subheader("Research Objective 1")
+st.subheader("Research Objective 2")
 
 st.info(
-    "Examine the trends in live births in Malaysia over the years."
+    "Compare life expectancy and income among different "
+    "ethnic groups and genders in Malaysia to identify "
+    "existing differences and gaps."
 )
 
 # ==========================================
-# YEAR FILTER
+# SIDEBAR FILTERS
 # ==========================================
 
 st.sidebar.title("Dashboard Filters")
 
-min_year = int(df_birth["date"].dt.year.min())
-max_year = int(df_birth["date"].dt.year.max())
-
-year_range = st.sidebar.slider(
-    "Select Year Range",
-    min_value=min_year,
-    max_value=max_year,
-    value=(min_year, max_year),
-    step=1
+selected_gender = st.sidebar.selectbox(
+    "Select Gender",
+    ["All Genders", "Male", "Female"]
 )
 
-start_year, end_year = year_range
-
-# ==========================================
-# FILTER AND GROUP DATA
-# ==========================================
-
-df_filtered = df_birth[
-    (df_birth["date"].dt.year >= start_year) &
-    (df_birth["date"].dt.year <= end_year)
-].copy()
-
-df_annual = (
-    df_filtered
-    .groupby(df_filtered["date"].dt.year)["abs"]
-    .sum()
-    .reset_index()
+ethnicity_options = sorted(
+    df_combined["ethnicity"].unique()
 )
 
-df_annual.columns = ["Year", "Total Births"]
+selected_ethnicity = st.sidebar.selectbox(
+    "Select Ethnic Group",
+    ["All Ethnic Groups"] + ethnicity_options
+)
 
-df_annual = df_annual.sort_values("Year")
+# ==========================================
+# APPLY FILTERS
+# ==========================================
 
-if df_annual.empty:
-    st.warning("No data available.")
+df_display = df_combined.copy()
+
+if selected_gender != "All Genders":
+    df_display = df_display[
+        df_display["sex"] == selected_gender.lower()
+    ]
+
+if selected_ethnicity != "All Ethnic Groups":
+    df_display = df_display[
+        df_display["ethnicity"] == selected_ethnicity
+    ]
+
+if df_display.empty:
+    st.warning("No data available for selected filters.")
     st.stop()
 
 # ==========================================
 # SUMMARY METRICS
 # ==========================================
 
-total_births = df_annual["Total Births"].sum()
-average_births = df_annual["Total Births"].mean()
-latest_births = df_annual.iloc[-1]["Total Births"]
-
 col1, col2, col3 = st.columns(3)
 
 col1.metric(
-    "Total Live Births",
-    f"{total_births:,.0f}"
+    "Ethnic-Gender Groups",
+    f"{len(df_display)}"
 )
 
 col2.metric(
-    "Average Annual Births",
-    f"{average_births:,.0f}"
+    "Average Life Expectancy",
+    f"{df_display['life_expectancy'].mean():.2f} years"
 )
 
 col3.metric(
-    f"Live Births in {int(df_annual.iloc[-1]['Year'])}",
-    f"{latest_births:,.0f}"
+    "Average Monthly Wage",
+    f"RM {df_display['wages_median'].mean():,.2f}"
 )
 
 st.divider()
 
 # ==========================================
-# VISUALIZATION 1 - LINE CHART
+# VISUALIZATION 2 - SCATTER PLOT
 # ==========================================
 
-st.subheader("Total Annual Live Births in Malaysia")
+st.subheader("Life Expectancy vs Median Monthly Wages")
 
 st.write(
-    "This line chart illustrates the changes in the total "
-    "number of live births in Malaysia over the selected years. "
-    "It helps identify the overall trend and fluctuations "
-    "in annual live births."
+    "This scatter plot compares average life expectancy "
+    "and median monthly wages among different ethnic groups "
+    "and genders in Malaysia. Each point represents an "
+    "ethnic group and gender combination."
 )
 
-fig = px.line(
-    df_annual,
-    x="Year",
-    y="Total Births",
-    markers=True,
-    title="Total Annual Live Births in Malaysia",
+fig = px.scatter(
+    df_display,
+    x="wages_median",
+    y="life_expectancy",
+    color="sex",
+    symbol="ethnicity",
+    hover_name="ethnicity",
+    hover_data={
+        "sex": True,
+        "wages_median": ":,.2f",
+        "life_expectancy": ":.2f"
+    },
+    title="Life Expectancy vs Median Monthly Wages",
     labels={
-        "Year": "Year",
-        "Total Births": "Total Live Births"
+        "wages_median": "Median Monthly Wage (RM)",
+        "life_expectancy": "Life Expectancy (Years)",
+        "sex": "Gender",
+        "ethnicity": "Ethnic Group"
     }
 )
 
 fig.update_traces(
-    line=dict(width=3),
-    marker=dict(size=7)
+    marker=dict(size=13, opacity=0.8)
 )
 
 fig.update_layout(
     template="plotly_white",
-    hovermode="x unified",
-    title_x=0.5
+    title_x=0.5,
+    hovermode="closest"
 )
 
 st.plotly_chart(fig, use_container_width=True)
@@ -195,8 +258,8 @@ st.plotly_chart(fig, use_container_width=True)
 # VIEW DATASET
 # ==========================================
 
-with st.expander("View Annual Birth Dataset"):
-    st.dataframe(df_annual, use_container_width=True)
+with st.expander("View Combined Dataset"):
+    st.dataframe(df_display, use_container_width=True)
 
 # ==========================================
 # FOOTER
@@ -204,5 +267,5 @@ with st.expander("View Annual Birth Dataset"):
 
 st.divider()
 
-st.caption("Source: Department of Statistics Malaysia (DOSM)")
-st.caption("Malaysia Live Birth Analysis | Objective 1")
+st.caption("Data Sources: Department of Statistics Malaysia (DOSM)")
+st.caption("Life Expectancy and Income Analysis | Objective 2")

@@ -2,260 +2,87 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# ==========================================
-# LIGHT THEME
-# ==========================================
+# Konfigurasi halaman Streamlit
+st.set_page_config(
+    page_title="DOSM Wages Visualisation",
+    page_icon="💰",
+    layout="wide"
+)
 
-st.markdown("""
-<style>
-    .stApp {
-        background-color: #F8FAFC;
-    }
+st.title("💰 Median Monthly Wages by Ethnic Group & Gender")
+st.markdown("Sumber data: **Jabatan Perangkaan Malaysia (DOSM)**")
 
-    h1, h2, h3 {
-        color: #1E293B;
-    }
-
-    .subtitle {
-        color: #64748B;
-        font-size: 16px;
-    }
-
-    div[data-testid="stMetric"] {
-        background-color: white;
-        padding: 18px;
-        border-radius: 12px;
-        border: 1px solid #E2E8F0;
-    }
-</style>
-""", unsafe_allow_html=True)
-
-# ==========================================
-# DATASET URLS
-# ==========================================
-
-LIFE_URL = "https://dosm.gov.my"
-WAGES_URL = "https://dosm.gov.my"
-
-# ==========================================
-# LOAD DATA
-# ==========================================
-
+# Fungsi caching untuk memuat turun data dengan pantas
 @st.cache_data
-def load_data():
-    df_life = pd.read_parquet(LIFE_URL)
-    df_wages = pd.read_parquet(WAGES_URL)
-    return df_life, df_wages
+def load_data(url):
+    df = pd.read_parquet(url)
+    if 'date' in df.columns:
+        df['date'] = pd.to_datetime(df['date'])
+    return df
 
-try:
-    df_life, df_wages = load_data()
-except Exception as e:
-    st.error(f"Unable to load datasets: {e}")
-    st.stop()
+# URL dataset wages daripada DOSM
+URL_WAGES = 'https://storage.dosm.gov.my/labour/wages_ethnicity.parquet'
 
-# ==========================================
-# CLEAN DATA
-# ==========================================
-
-df_life_clean = df_life.copy()
-if "age" in df_life_clean.columns:
-    df_life_clean = df_life_clean[df_life_clean["age"] == 0]
-
-df_life_clean["sex"] = df_life_clean["sex"].str.strip().str.lower()
-df_life_clean["ethnicity"] = df_life_clean["ethnicity"].str.strip().str.lower()
-
-df_life_clean = df_life_clean[
-    (df_life_clean["sex"].isin(["male", "female"])) &
-    (~df_life_clean["ethnicity"].isin(["overall", "citizen"]))
-]
-
-df_wages_clean = df_wages.copy()
-df_wages_clean["sex"] = df_wages_clean["sex"].str.strip().str.lower()
-df_wages_clean["ethnicity"] = df_wages_clean["ethnicity"].str.strip().str.lower()
-
-df_wages_clean = df_wages_clean[
-    (df_wages_clean["sex"].isin(["male", "female"])) &
-    (~df_wages_clean["ethnicity"].isin(["overall", "citizen"]))
-]
+with st.spinner('Sedang memuat turun data gaji daripada DOSM...'):
+    df_wages = load_data(URL_WAGES)
 
 # ==========================================
-# GROUP DATA
+# VISUALISASI 2: Median Monthly Wages
 # ==========================================
+st.header("2. Median Monthly Wages (RM) by Ethnic Group & Gender")
 
-df_life_grouped = (
-    df_life_clean
-    .groupby(["ethnicity", "sex"], as_index=False)["life_expectancy"]
-    .mean()
-)
+# Tapis kategori agregat ('both', 'overall', 'citizen') untuk perbandingan yang bersih
+df_wages_clean = df_wages[
+    (df_wages['sex'].isin(['male', 'female'])) &
+    (~df_wages['ethnicity'].isin(['overall', 'citizen']))
+].copy()
 
-df_wages_grouped = (
-    df_wages_clean
-    .groupby(["ethnicity", "sex"], as_index=False)["wages_median"]
-    .mean()
-)
+# Tambah pilihan interaktif untuk memilih tempoh masa (Semua Tahun atau Tahun Tertentu)
+if 'date' in df_wages_clean.columns:
+    df_wages_clean['year'] = df_wages_clean['date'].dt.year
+    years = sorted(df_wages_clean['year'].unique(), reverse=True)
+    selected_year = st.selectbox(
+        "Pilih Tempoh Masa:",
+        options=["Semua Tahun (Purata Keseluruhan)"] + [str(y) for y in years]
+    )
+    
+    if selected_year != "Semua Tahun (Purata Keseluruhan)":
+        df_wages_clean = df_wages_clean[df_wages_clean['year'] == int(selected_year)]
 
-# ==========================================
-# MERGE DATASETS
-# ==========================================
+# Agregat untuk mendapatkan purata gaji median bulanan mengikut Etnik & Jantina
+df_wages_grouped = df_wages_clean.groupby(['ethnicity', 'sex'], as_index=False)['wages_median'].mean()
 
-df_combined = pd.merge(
-    df_life_grouped,
+# Bundarkan nilai kepada 2 tempat perpuluhan supaya kemas apabila hover
+df_wages_grouped['wages_median'] = df_wages_grouped['wages_median'].round(2)
+
+# Cipta carta palang (bar chart)
+fig_wages = px.bar(
     df_wages_grouped,
-    on=["ethnicity", "sex"],
-    how="inner"
-)
-
-if df_combined.empty:
-    st.warning("No matching data found.")
-    st.stop()
-
-# Kemaskan ejaan untuk paparan carta yang lebih cantik
-df_combined["ethnicity"] = df_combined["ethnicity"].str.title()
-df_combined["sex"] = df_combined["sex"].str.title()
-
-# ==========================================
-# DASHBOARD HEADER
-# ==========================================
-
-st.title("Life Expectancy and Income Analysis")
-
-st.markdown(
-    '<p class="subtitle">'
-    'Comparing life expectancy and median monthly wages '
-    'among different ethnic groups and genders in Malaysia.'
-    '</p>',
-    unsafe_allow_html=True
-)
-
-st.divider()
-
-# ==========================================
-# RESEARCH OBJECTIVE 2
-# ==========================================
-
-st.subheader("Research Objective 2")
-
-st.info(
-    "Compare life expectancy and income among different "
-    "ethnic groups and genders in Malaysia to identify "
-    "existing differences and gaps."
-)
-
-# ==========================================
-# SIDEBAR FILTERS
-# ==========================================
-
-st.sidebar.title("Dashboard Filters")
-
-selected_gender = st.sidebar.selectbox(
-    "Select Gender",
-    ["All Genders", "Male", "Female"]
-)
-
-ethnicity_options = sorted(df_combined["ethnicity"].unique())
-
-selected_ethnicity = st.sidebar.selectbox(
-    "Select Ethnic Group",
-    ["All Ethnic Groups"] + ethnicity_options
-)
-
-# ==========================================
-# APPLY FILTERS
-# ==========================================
-
-df_display = df_combined.copy()
-
-if selected_gender != "All Genders":
-    df_display = df_display[df_display["sex"] == selected_gender]
-
-if selected_ethnicity != "All Ethnic Groups":
-    df_display = df_display[df_display["ethnicity"] == selected_ethnicity]
-
-if df_display.empty:
-    st.warning("No data available for selected filters.")
-    st.stop()
-
-# ==========================================
-# SUMMARY METRICS
-# ==========================================
-
-col1, col2, col3 = st.columns(3)
-
-col1.metric(
-    "Ethnic-Gender Groups",
-    f"{len(df_display)}"
-)
-
-col2.metric(
-    "Average Life Expectancy",
-    f"{df_display['life_expectancy'].mean():.2f} years"
-)
-
-col3.metric(
-    "Average Monthly Wage",
-    f"RM {df_display['wages_median'].mean():,.2f}"
-)
-
-st.divider()
-
-# ==========================================
-# VISUALIZATION 2 - SCATTER PLOT
-# ==========================================
-
-st.subheader("Life Expectancy vs Median Monthly Wages")
-
-st.write(
-    "This scatter plot compares average life expectancy "
-    "and median monthly wages among different ethnic groups "
-    "and genders in Malaysia. Each point represents an "
-    "ethnic group and gender combination."
-)
-
-fig = px.scatter(
-    df_display,
-    x="wages_median",
-    y="life_expectancy",
-    color="sex",
-    symbol="ethnicity",
-    hover_name="ethnicity",
-    hover_data={
-        "sex": True,
-        "wages_median": ":,.2f",
-        "life_expectancy": ":.2f"
-    },
-    title="Life Expectancy vs Median Monthly Wages",
+    x='ethnicity',
+    y='wages_median',
+    color='sex',
+    barmode='group',
+    text_auto='.2f',
+    title=f"Median Monthly Wages (RM) by Ethnic Group & Gender ({selected_year})",
     labels={
-        "wages_median": "Median Monthly Wage (RM)",
-        "life_expectancy": "Life Expectancy (Years)",
-        "sex": "Gender",
-        "ethnicity": "Ethnic Group"
+        'ethnicity': 'Ethnic Group',
+        'wages_median': 'Median Monthly Wage (RM)',
+        'sex': 'Gender'
     }
 )
 
-fig.update_traces(
-    marker=dict(size=13, opacity=0.8)
-)
+# Kemaskan susun atur graf
+fig_wages.update_traces(textposition='outside')
+fig_wages.update_layout(yaxis_title="Median Monthly Wage (RM)", xaxis_title="Ethnic Group")
 
-fig.update_layout(
-    template="plotly_white",
-    title_x=0.5,
-    hovermode="closest"
-)
+# Paparkan graf di Streamlit
+st.plotly_chart(fig_wages, use_container_width=True)
 
-st.plotly_chart(fig, use_container_width=True)
-
-# ==========================================
-# VIEW DATASET
-# ==========================================
-
-with st.expander("View Combined Dataset"):
-    st.dataframe(df_display, use_container_width=True)
-
-# ==========================================
-# FOOTER
-# ==========================================
-
-st.divider()
-
-st.caption("Data Sources: Department of Statistics Malaysia (DOSM)")
-st.caption("Life Expectancy and Income Analysis | Objective 2")
+# Pilihan untuk melihat jadual data yang telah diproses
+with st.expander("Lihat Jadual Data Ringkasan & Data Mentah"):
+    tab1, tab2 = st.tabs(["Data Ringkasan (Grouped)", "Data Mentah (Cleaned)"])
+    
+    with tab1:
+        st.dataframe(df_wages_grouped, use_container_width=True)
+    with tab2:
+        st.dataframe(df_wages_clean, use_container_width=True)

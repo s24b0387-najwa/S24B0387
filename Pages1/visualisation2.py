@@ -6,11 +6,9 @@ import plotly.express as px
 # PAGE CONFIGURATION
 # ==========================================
 
-st.set_page_config(
     page_title="Life Expectancy and Income Analysis",
     page_icon="📊",
     layout="wide"
-)
 
 # ==========================================
 # LIGHT THEME

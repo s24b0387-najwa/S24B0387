@@ -90,8 +90,7 @@ st.divider()
 st.subheader("Research Objective 1")
 
 st.info(
-    "Examine the trends in live births in Malaysia over the "
-    "years based on state, gender, and ethnic group."
+    "Examine the trends in live births in Malaysia over the years"
 )
 
 st.write("")

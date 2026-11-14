@@ -6,11 +6,11 @@ import plotly.express as px
 # PAGE CONFIGURATION
 # ==========================================
 
-st.set_page_config(
+
     page_title="Live Birth Trends in Malaysia",
     page_icon="📊",
     layout="wide"
-)
+
 
 # ==========================================
 # LIGHT THEME

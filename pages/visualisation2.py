@@ -1,17 +1,6 @@
-
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-
-# ==========================================
-# PAGE CONFIGURATION
-# ==========================================
-
-st.set_page_config(
-    page_title="Life Expectancy and Income Analysis",
-    page_icon="📊",
-    layout="wide"
-)
 
 # ==========================================
 # LIGHT THEME
@@ -45,15 +34,8 @@ st.markdown("""
 # DATASET URLS
 # ==========================================
 
-LIFE_URL = (
-    "https://storage.dosm.gov.my/demography/"
-    "life_expectancy.parquet"
-)
-
-WAGES_URL = (
-    "https://storage.dosm.gov.my/labour/"
-    "wages_ethnicity.parquet"
-)
+LIFE_URL = "https://dosm.gov.my"
+WAGES_URL = "https://dosm.gov.my"
 
 # ==========================================
 # LOAD DATA
@@ -63,7 +45,6 @@ WAGES_URL = (
 def load_data():
     df_life = pd.read_parquet(LIFE_URL)
     df_wages = pd.read_parquet(WAGES_URL)
-
     return df_life, df_wages
 
 try:
@@ -76,15 +57,26 @@ except Exception as e:
 # CLEAN DATA
 # ==========================================
 
-df_life_clean = df_life[
-    (df_life["sex"].isin(["male", "female"])) &
-    (~df_life["ethnicity"].isin(["overall", "citizen"]))
-].copy()
+df_life_clean = df_life.copy()
+if "age" in df_life_clean.columns:
+    df_life_clean = df_life_clean[df_life_clean["age"] == 0]
 
-df_wages_clean = df_wages[
-    (df_wages["sex"].isin(["male", "female"])) &
-    (~df_wages["ethnicity"].isin(["overall", "citizen"]))
-].copy()
+df_life_clean["sex"] = df_life_clean["sex"].str.strip().str.lower()
+df_life_clean["ethnicity"] = df_life_clean["ethnicity"].str.strip().str.lower()
+
+df_life_clean = df_life_clean[
+    (df_life_clean["sex"].isin(["male", "female"])) &
+    (~df_life_clean["ethnicity"].isin(["overall", "citizen"]))
+]
+
+df_wages_clean = df_wages.copy()
+df_wages_clean["sex"] = df_wages_clean["sex"].str.strip().str.lower()
+df_wages_clean["ethnicity"] = df_wages_clean["ethnicity"].str.strip().str.lower()
+
+df_wages_clean = df_wages_clean[
+    (df_wages_clean["sex"].isin(["male", "female"])) &
+    (~df_wages_clean["ethnicity"].isin(["overall", "citizen"]))
+]
 
 # ==========================================
 # GROUP DATA
@@ -92,14 +84,14 @@ df_wages_clean = df_wages[
 
 df_life_grouped = (
     df_life_clean
-    .groupby(["ethnicity", "sex"], as_index=False)
-    ["life_expectancy"].mean()
+    .groupby(["ethnicity", "sex"], as_index=False)["life_expectancy"]
+    .mean()
 )
 
 df_wages_grouped = (
     df_wages_clean
-    .groupby(["ethnicity", "sex"], as_index=False)
-    ["wages_median"].mean()
+    .groupby(["ethnicity", "sex"], as_index=False)["wages_median"]
+    .mean()
 )
 
 # ==========================================
@@ -116,6 +108,10 @@ df_combined = pd.merge(
 if df_combined.empty:
     st.warning("No matching data found.")
     st.stop()
+
+# Kemaskan ejaan untuk paparan carta yang lebih cantik
+df_combined["ethnicity"] = df_combined["ethnicity"].str.title()
+df_combined["sex"] = df_combined["sex"].str.title()
 
 # ==========================================
 # DASHBOARD HEADER
@@ -156,9 +152,7 @@ selected_gender = st.sidebar.selectbox(
     ["All Genders", "Male", "Female"]
 )
 
-ethnicity_options = sorted(
-    df_combined["ethnicity"].unique()
-)
+ethnicity_options = sorted(df_combined["ethnicity"].unique())
 
 selected_ethnicity = st.sidebar.selectbox(
     "Select Ethnic Group",
@@ -172,14 +166,10 @@ selected_ethnicity = st.sidebar.selectbox(
 df_display = df_combined.copy()
 
 if selected_gender != "All Genders":
-    df_display = df_display[
-        df_display["sex"] == selected_gender.lower()
-    ]
+    df_display = df_display[df_display["sex"] == selected_gender]
 
 if selected_ethnicity != "All Ethnic Groups":
-    df_display = df_display[
-        df_display["ethnicity"] == selected_ethnicity
-    ]
+    df_display = df_display[df_display["ethnicity"] == selected_ethnicity]
 
 if df_display.empty:
     st.warning("No data available for selected filters.")

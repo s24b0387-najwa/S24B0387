@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # ==========================================
-# PAGE CONFIGURATION (HANYA DI MAIN.PY)
+# PAGE CONFIGURATION (ONLY IN MAIN.PY)
 # ==========================================
 
 st.set_page_config(
@@ -52,7 +52,7 @@ def load_data():
     df = pd.read_parquet(BIRTH_URL)
     df["date"] = pd.to_datetime(df["date"])
 
-    # Elakkan pengiraan berganda jika dataset mempunyai lajur pecahan
+    # Avoid double counting if dataset contains breakdown columns
     if "sex" in df.columns:
         df = df[df["sex"] == "both"]
     if "state" in df.columns:
@@ -134,7 +134,7 @@ if df_annual.empty:
     st.stop()
 
 # ==========================================
-# SUMMARY METRICS
+# SUMMARY METRICS (SUMMARY BOX)
 # ==========================================
 
 total_births = df_annual["Total Births"].sum()
@@ -175,6 +175,20 @@ fig.update_traces(line=dict(width=3), marker=dict(size=7))
 fig.update_layout(template="plotly_white", hovermode="x unified", title_x=0.5)
 
 st.plotly_chart(fig, use_container_width=True)
+
+st.divider()
+
+# ==========================================
+# INTERPRETATION / DISCUSSION
+# ==========================================
+
+st.subheader("Interpretation & Discussion")
+
+st.markdown("""
+* **Long-Term Downward Trajectory:** Overall, annual live births in Malaysia exhibit a clear long-term declining trend, particularly accelerating after 2014 despite temporary cyclical rebounds in the early 2010s.
+* **Notable Anomalies & Fluctuations:** Sharp downward drops are observable during periods of economic uncertainty and public health disruptions (such as the 2020–2021 COVID-19 pandemic), followed by a brief post-pandemic rebound before resuming a downward path.
+* **Demographic & Scientific Meaning:** This sustained decline reflects Malaysia's ongoing demographic shift toward an aging population, driven by delayed marriages, higher female workforce participation, urbanization, and rising costs of raising children.
+""")
 
 # ==========================================
 # VIEW DATASET

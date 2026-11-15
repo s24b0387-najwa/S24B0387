@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # ==========================================
-# LIGHT THEME (SERAGAM DENGAN MAIN.PY)
+# LIGHT THEME (MATCHING MAIN.PY)
 # ==========================================
 
 st.markdown("""
@@ -157,17 +157,17 @@ col3.metric("Years Analyzed", f"{overlapping_years} Years")
 st.divider()
 
 # ==========================================
-# VISUALIZATION 1 - CORRELATION HEATMAP
+# VISUALIZATION 3 - CORRELATION HEATMAP
 # ==========================================
 
-st.subheader("1. Demographic & Economic Indicator Correlation Heatmap")
+st.subheader("Demographic & Economic Indicator Correlation Heatmap")
 
 st.write(
     "This heatmap displays the Pearson correlation coefficients (r) across national wage and demographic indicators. "
-    "Values near +1 represent a strong positive relationship, whereas values near -1 represent a strong inverse relationship."
+    "Values near +1 indicate a strong positive relationship, whereas values near -1 indicate a strong negative relationship."
 )
 
-fig1 = px.imshow(
+fig = px.imshow(
     corr_matrix,
     text_auto=".3f",
     aspect="auto",
@@ -177,59 +177,9 @@ fig1 = px.imshow(
     title="Demographic & Economic Indicator Correlation Heatmap"
 )
 
-fig1.update_layout(template="plotly_white", height=550, title_x=0.5)
+fig.update_layout(template="plotly_white", height=550, title_x=0.5)
 
-st.plotly_chart(fig1, use_container_width=True)
-
-st.divider()
-
-# ==========================================
-# VISUALIZATION 2 & 3 (3 VISUALIZATIONS PER PAGE)
-# ==========================================
-
-viz_col1, viz_col2 = st.columns(2)
-
-with viz_col1:
-    st.subheader("2. Median Wage vs. Crude Birth Rate")
-    st.write(
-        "This scatter plot examines the inverse relationship between rising median monthly wages and declining crude birth rates."
-    )
-    fig2 = px.scatter(
-        df_filtered,
-        x="wages_median",
-        y="birth_rate",
-        color="Year",
-        size="total_births",
-        title="Median Monthly Wage vs. Crude Birth Rate",
-        labels={
-            "wages_median": "Median Monthly Wage (RM)",
-            "birth_rate": "Crude Birth Rate (per 1,000 pop.)",
-            "total_births": "Total Births"
-        }
-    )
-    fig2.update_layout(template="plotly_white", title_x=0.5)
-    st.plotly_chart(fig2, use_container_width=True)
-
-with viz_col2:
-    st.subheader("3. Median Wage vs. Life Expectancy")
-    st.write(
-        "This scatter plot evaluates how improvements in median monthly wages correspond with changes in national life expectancy."
-    )
-    fig3 = px.scatter(
-        df_filtered,
-        x="wages_median",
-        y="life_expectancy",
-        color="Year",
-        size="wages_mean",
-        title="Median Monthly Wage vs. Life Expectancy",
-        labels={
-            "wages_median": "Median Monthly Wage (RM)",
-            "life_expectancy": "Life Expectancy (Years)",
-            "wages_mean": "Mean Wage (RM)"
-        }
-    )
-    fig3.update_layout(template="plotly_white", title_x=0.5)
-    st.plotly_chart(fig3, use_container_width=True)
+st.plotly_chart(fig, use_container_width=True)
 
 st.divider()
 
@@ -240,9 +190,9 @@ st.divider()
 st.subheader("Interpretation & Discussion")
 
 st.markdown("""
-* **Inverse Relationship Between Income and Fertility:** The correlation heatmap and scatter plot reveal a strong negative correlation between monthly wages and both total annual births and crude birth rates. As household income and economic development increase, fertility rates systematically decline.
-* **Positive Association with Longevity & Anomalies:** Median wages generally show a positive association with life expectancy due to improved healthcare access and living standards; however, noticeable downward anomalies in life expectancy appear during the 2021–2022 COVID-19 mortality shock despite wage recovery.
-* **Scientific Meaning (Demographic Transition Theory):** These empirical patterns align with the **Demographic Transition Model**, where industrialization, rising wages, higher female labor force participation, and increased opportunity costs of child-rearing drive a structural shift from high birth rates toward smaller family sizes and longer life expectancy.
+* **Inverse Relationship Between Income and Fertility:** The correlation heatmap reveals a strong negative correlation between monthly wages and both total annual births and crude birth rates. As household income increases, fertility rates systematically decline.
+* **Positive Association with Longevity:** Median and mean monthly wages exhibit a positive relationship with life expectancy, reflecting how higher living standards and better healthcare access support longer lifespans.
+* **Scientific Meaning (Demographic Transition Theory):** These empirical relationships align with the **Demographic Transition Model**, wherein economic modernization, rising wages, and higher opportunity costs of child-rearing drive a shift toward lower birth rates and higher life expectancy.
 """)
 
 # ==========================================

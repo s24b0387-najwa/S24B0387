@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# Konfigurasi halaman Streamlit
+# Streamlit page configuration
 st.set_page_config(
     page_title="DOSM Correlation Heatmap",
     page_icon="🔥",
@@ -10,9 +10,9 @@ st.set_page_config(
 )
 
 st.title("🔥 Demographic & Economic Indicator Correlation")
-st.markdown("Sumber data: **Jabatan Perangkaan Malaysia (DOSM)**")
+st.markdown("Data source: **Department of Statistics Malaysia (DOSM)**")
 
-# Fungsi caching untuk memuat turun data daripada DOSM
+# Caching function to load data from DOSM
 @st.cache_data
 def load_data(url):
     df = pd.read_parquet(url)
@@ -20,23 +20,23 @@ def load_data(url):
         df['date'] = pd.to_datetime(df['date'])
     return df
 
-# URL dataset daripada DOSM
+# DOSM dataset URLs
 URL_BIRTH = 'https://storage.dosm.gov.my/demography/birth.parquet'
 URL_WAGES = 'https://storage.dosm.gov.my/labour/wages_ethnicity.parquet'
 URL_LIFE = 'https://storage.dosm.gov.my/demography/life_expectancy_state_ethnic.parquet'
 
-# Memuatkan semua dataset
-with st.spinner('Sedang memuat turun dan menggabungkan data daripada DOSM...'):
+# Load all datasets
+with st.spinner('Loading and merging data from DOSM...'):
     df_birth_raw = load_data(URL_BIRTH)
     df_wages_raw = load_data(URL_WAGES)
     df_life_raw = load_data(URL_LIFE)
 
 # ==========================================
-# VISUALISASI 3: Correlation Heatmap
+# VISUALISATION 3: Correlation Heatmap
 # ==========================================
 st.header("3. Demographic & Economic Indicator Correlation Heatmap")
 
-# Tapis ke peringkat nasional dan keseluruhan demografi
+# Filter to national level and overall demographics
 df_w_nat = df_wages_raw[
     (df_wages_raw['sex'] == 'both') & 
     (df_wages_raw['ethnicity'] == 'overall')
@@ -51,11 +51,11 @@ df_l_nat = df_life_raw[
     (df_life_raw['ethnicity'] == 'overall')
 ].groupby('date', as_index=False)['life_expectancy'].mean()
 
-# Gabungkan (merge) ketiga-tiga dataset berdasarkan tarikh (date)
+# Merge all three datasets based on date
 df_demographics = pd.merge(df_w_nat, df_b_nat, on='date', how='inner')
 df_demographics = pd.merge(df_demographics, df_l_nat, on='date', how='inner')
 
-# Pilih indikator khusus untuk korelasi
+# Select specific indicators for correlation
 indicators = df_demographics[['wages_median', 'wages_mean', 'total_births', 'birth_rate', 'life_expectancy']].rename(
     columns={
         'wages_median': 'Median Monthly Wage',
@@ -66,10 +66,10 @@ indicators = df_demographics[['wages_median', 'wages_mean', 'total_births', 'bir
     }
 )
 
-# Kira matriks korelasi Pearson
+# Calculate Pearson correlation matrix
 corr_matrix = indicators.corr()
 
-# Cipta heatmap menggunakan px.imshow
+# Create heatmap using px.imshow
 fig_corr = px.imshow(
     corr_matrix,
     text_auto='.3f',
@@ -80,15 +80,15 @@ fig_corr = px.imshow(
     title='Demographic & Economic Indicator Correlation Heatmap'
 )
 
-# Kemaskan ketinggian carta supaya label mudah dibaca
+# Adjust chart height so labels are easy to read
 fig_corr.update_layout(height=600)
 
-# Paparkan graf di Streamlit
+# Display chart in Streamlit
 st.plotly_chart(fig_corr, use_container_width=True)
 
-# Pilihan untuk melihat jadual matriks korelasi dan data yang digabungkan
-with st.expander("Lihat Jadual Matriks Korelasi & Data Gabungan"):
-    tab1, tab2 = st.tabs(["Matriks Korelasi (Pearson)", "Data Gabungan (Merged Data)"])
+# Option to view correlation matrix and merged data tables
+with st.expander("View Correlation Matrix & Merged Data Tables"):
+    tab1, tab2 = st.tabs(["Correlation Matrix (Pearson)", "Merged Data"])
     
     with tab1:
         st.dataframe(corr_matrix.round(3), use_container_width=True)

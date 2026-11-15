@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # ==========================================
-# LIGHT THEME (SERAGAM DENGAN MAIN.PY)
+# LIGHT THEME (MATCHING MAIN.PY)
 # ==========================================
 
 st.markdown("""
@@ -71,8 +71,7 @@ st.divider()
 st.subheader("Research Objective 2")
 
 st.info(
-    "Examine disparities in median monthly wages across major ethnic groups and genders in Malaysia, "
-    "and evaluate longitudinal wage trends and dispersion over time."
+    "Compare the median monthly wages across different ethnic groups and genders in Malaysia."
 )
 
 # ==========================================
@@ -120,14 +119,14 @@ col3.metric("Female Median Wage", f"RM {female_median:,.2f}")
 st.divider()
 
 # ==========================================
-# VISUALIZATION 1 - GROUPED BAR CHART
+# VISUALIZATION 2 - GROUPED BAR CHART
 # ==========================================
 
-st.subheader("1. Median Monthly Wages (RM) by Ethnic Group & Gender")
+st.subheader("Median Monthly Wages (RM) by Ethnic Group & Gender")
 
 st.write(
     "This grouped bar chart compares the average median monthly wages between male and female "
-    "workers across major ethnic groups in Malaysia for the selected period."
+    "workers across major ethnic groups in Malaysia for the selected time period."
 )
 
 df_wages_grouped = (
@@ -137,7 +136,7 @@ df_wages_grouped = (
 )
 df_wages_grouped["wages_median"] = df_wages_grouped["wages_median"].round(2)
 
-fig1 = px.bar(
+fig = px.bar(
     df_wages_grouped,
     x="ethnicity",
     y="wages_median",
@@ -152,65 +151,10 @@ fig1 = px.bar(
     }
 )
 
-fig1.update_traces(textposition="outside")
-fig1.update_layout(template="plotly_white", title_x=0.5)
+fig.update_traces(textposition="outside")
+fig.update_layout(template="plotly_white", title_x=0.5)
 
-st.plotly_chart(fig1, use_container_width=True)
-
-st.divider()
-
-# ==========================================
-# VISUALIZATION 2 & 3 (3 VISUALIZATIONS PER PAGE)
-# ==========================================
-
-viz_col1, viz_col2 = st.columns(2)
-
-with viz_col1:
-    st.subheader("2. Longitudinal Wage Trend by Ethnicity")
-    st.write(
-        "This line plot tracks the progression of median monthly wages across ethnic groups over time."
-    )
-    df_trend = (
-        df_wages_clean
-        .groupby(["date", "ethnicity"], as_index=False)["wages_median"]
-        .mean()
-    )
-    fig2 = px.line(
-        df_trend,
-        x="date",
-        y="wages_median",
-        color="ethnicity",
-        markers=True,
-        title="Median Monthly Wage Trend Over Time",
-        labels={
-            "date": "Year",
-            "wages_median": "Median Monthly Wage (RM)",
-            "ethnicity": "Ethnic Group"
-        }
-    )
-    fig2.update_traces(line=dict(width=2.5), marker=dict(size=6))
-    fig2.update_layout(template="plotly_white", hovermode="x unified", title_x=0.5)
-    st.plotly_chart(fig2, use_container_width=True)
-
-with viz_col2:
-    st.subheader("3. Wage Distribution & Dispersion")
-    st.write(
-        "This box plot illustrates the statistical spread, median, and interquartile range of wages across groups."
-    )
-    fig3 = px.box(
-        df_wages_clean,
-        x="ethnicity",
-        y="wages_median",
-        color="sex",
-        title="Wage Distribution by Ethnic Group & Gender",
-        labels={
-            "ethnicity": "Ethnic Group",
-            "wages_median": "Median Monthly Wage (RM)",
-            "sex": "Gender"
-        }
-    )
-    fig3.update_layout(template="plotly_white", title_x=0.5)
-    st.plotly_chart(fig3, use_container_width=True)
+st.plotly_chart(fig, use_container_width=True)
 
 st.divider()
 
@@ -221,9 +165,9 @@ st.divider()
 st.subheader("Interpretation & Discussion")
 
 st.markdown("""
-* **Observed Patterns & Disparities:** Distinct wage stratification is evident across ethnic groups, with Chinese and Indian workers consistently recording higher median monthly wages than Bumiputera and other groups. Across nearly all ethnic categories, male workers earn a higher median wage than female workers, reflecting a persistent structural gender pay gap.
-* **Temporal Trajectory & Anomalies:** The longitudinal line plot shows a steady upward trend in nominal median wages over the years driven by economic expansion and minimum wage policies, with temporary stagnation during macroeconomic shocks such as the 2020–2021 pandemic period.
-* **Scientific & Socioeconomic Meaning:** The wider interquartile range observed in higher-earning ethnic groups indicates greater occupational dispersion across high-skilled and entry-level sectors, demonstrating how demographic factors intersect with labor market segmentation in Malaysia.
+* **Ethnic Wage Disparities:** Distinct wage stratification is observable across ethnic groups, with Chinese and Indian workers generally recording higher median monthly wages compared to Bumiputera and other groups.
+* **Gender Pay Gap:** Within almost every ethnic category, male workers consistently earn a higher median monthly wage than female workers, reflecting a persistent structural gender pay gap in the Malaysian labor market.
+* **Socioeconomic Meaning:** These disparities highlight differences in occupational distribution, industry concentration, and seniority levels across demographic segments in Malaysia.
 """)
 
 # ==========================================
